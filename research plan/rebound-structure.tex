@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+  [auto,
+  frame/.style ={draw=yafcolor4!50, fill=yafcolor4!03, thick, inner sep=0em, rounded corners, text centered,
+    text width=4.6cm, minimum height=8.4cm},
+  block/.style ={draw=yafcolor5!70, fill=yafcolor5!03, thick, inner sep=0.4em, rounded corners, text centered,
+    text width=3.8cm, minimum height=1.1cm}, 
+  plaintext/.style = {text width=1.8cm, text centered},
+  widetext/.style = {text width=5cm, text centered},    
+  ]
+
+\tikzstyle{simpleline} = [color=yafcolor4!70, thick, dashed]
+
+\node[frame] (f1) at (5,2.55) {};
+\node[widetext] (rh1) at (5,7.2) {\discover};
+
+\node[block] (b11) at (5,6)   { language-based methods for polarization detection } ;
+\node[block] (b12) at (5,4.3) { network enrichment with semantic annotations\\(polarity, leaning, stance, aggressiveness, ...) } ;
+\node[block] (b13) at (5,2.4) { polarization detection in signed/annotated/ /temporal networks } ;
+\node[block] (b14) at (5,0.7) { role mining in signed/annotated/ /temporal networks } ;
+
+
+\node[frame] (f2) at (10,2.55) {};
+\node[widetext] (rh2) at (10,7.2) {\explore};
+
+\node[block] (b21) at (10,6)   { ideology-leaning inference of media actors } ;
+\node[block] (b21) at (10,4.7) { story summarization and visualization } ;
+\node[block] (b23) at (10,3.4) { ``news diet'' visualization } ;
+\node[block] (b24) at (10,2.1) { interaction / exploration } ;
+\node[block] (b25) at (10,0.6) { learning acceptance probabilities for user--item recommendations  } ;
+
+
+\node[frame] (f3) at (15,2.55) {};
+\node[widetext] (rh3) at (15,7.2) {\recommend};
+
+\node[block] (b31) at (15,6)   { leaning-aware recommendation systems } ;
+\node[block] (b31) at (15,4.7) { consensus $k$-median } ;
+\node[block] (b33) at (15,3.4) { diversity maximization } ;
+\node[block] (b34) at (15,2.1) { balancing of\\information exposure } ;
+\node[block] (b35) at (15,0.8) { formulations based on influence propagation } ;
+\node[block] (b35) at (15,-0.7) { analysis of factors affecting user willingness to explore  } ;
+
+
+\node[block, text width=14.4cm, minimum height=1.6cm] (b35) at (10,-2.75) 
+	{ \methods :~ text mining, matrix factorization, graph mining, 
+	probabilistic algorithms, optimization under uncertainty, 
+	combinatorial algorithms, approximation algorithms } ;
+
+\end{tikzpicture}

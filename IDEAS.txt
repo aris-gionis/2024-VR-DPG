@@ -1,0 +1,57 @@
+TITLE 
+
+Diversity in Information Systems (DIVIS)
+Diversity and Fairness in Information Systems (DIFIS) 
+
+
+POINTS
+
+Highlight differences and connections of diversity and fairness 
+
+Diversity and fairness in knowledge exploration  -- DiF-KE
+-- diversity in ranking systems (MSR)
+-- incorporate user modeling
+-- papers with Erica / Honglian / Sijing
+-- reinforcement learning (Ruo-Chun)
+-- user modeling with ALPS 
+-- max-sum diversification with ALPS (?)
+-- ranking : diversification over all prefixes (problem proposed to Honglian and Sijing)
+-- Project with Tianyi
+	o  Hitting set + calibration (should probably go in connection to user modeling)
+
+Diversity and Fairness in market systems -- Div-MS
+-- diversity in scenarios where supply meets demand
+
+Diversity and fairness in Information Networks -- DiF-IN
+-- republik / minimize exposure
+-- introduce new notions of diversity in graphs
+-- diversity densest subgraphs
+-- fairness-aware pagerank (Haoyun Zhou project)
+-- Add edges to improve information access
+
+Diversity-aware and fair clustering -- DiF-C
+
+Interesting method to explore --> ALPS
+-- for what problem exactly?
+-- for instance in conjuntion with user modeling, to predict user responses
+
+
+Other interesting topics / papers:
+
+-- Clustering with fair outliers (!) Epasto
+-- Maxmin-Fair Ranking: Individual Fairness under Group-Fairness Constraints (García-Soriano and Bonchi)
+-- Graph Augmentation for Equitable Access (GAEA),
+-- Information access representations and social capital in networks (Suresh)
+-- Max-Min Diversification with Fairness Constraints: Exact and Approximation Algorithms (Mathioudakis)
+-- Diversity in market systems -- DivMS
+	o  diversity in scenarios where supply meets demand
+	o  there should be work by economists
+
+
+ENVIRONMENT
+
+WASP assistant professor
+Ioanna has worked on fairness clustering
+
+
+

@@ -1,0 +1,733 @@
+\documentclass[a4paper,11pt]{article}
+\include{macros}
+
+\pagestyle{fancy}
+\lhead[{Gionis}]{{Gionis}}
+\rhead[{\acronym}]{{\acronym}}
+\chead[~]{{~}}
+% \setcounter{page}{1}
+
+\renewcommand{\baselinestretch}{1.01} 
+\begin{document}
+
+
+\begin{center} 
+{\large Vetenskapsrådet: Distinguished professor grant within natural % } \vspace{1mm}\\ 
+% {\large 
+and engineering sciences 2024} \vspace{2.5mm}\\
+{\Large Research plan} \vspace{2mm}\\
+{\LARGE\bf {\proposaltitle} {\sc (}{\acronymtitle}{\sc )}}  \vspace{3mm} \\
+{\Large Aristides Gionis}  \\
+\end{center}
+
+\subsection*{1.~~~Purpose and aims}
+
+In the modern information age we are submersed in a constant stream of data from various sources, 
+ranging from the internet and social media to news outlets and podcasts. 
+While this wealth of information has the potential to empower individuals, 
+it also poses a significant challenge known as \emph{information~overload}:
+as the volume of available information continues to grow exponentially, 
+individuals are increasingly struggling to sift through noisy data
+to find reliable, relevant, and meaningful~content.
+
+\iffalse
+This overload can lead to decision paralysis, reduced productivity, and cognitive overload, ultimately hindering our ability to make informed decisions and engage critically with the world around us. Addressing the problem of information overload requires not only technological solutions such as improved search algorithms and filtering mechanisms but also a concerted effort to cultivate digital literacy skills and promote mindful consumption habits among individuals.
+\fi 
+
+To mitigate the problem of information overload, 
+in addition to cultivating % digital literacy skills and promoting 
+mindful consumption habits, 
+it also requires \emph{technological solutions} tailored to the needs of individuals. 
+Advanced information-retrieval algorithms can help streamline search processes, 
+enabling users to find relevant content. 
+%  more efficiently amidst vast data pools. 
+Recommendation systems play a crucial role by suggesting personalized content 
+based on users' preferences and past interactions. 
+The challenge of information overload arises in various scenarios. 
+For instance, it occurs when users interact with search engines using keyword searches, 
+when peruse product reviews, 
+scroll through social-media timelines, or 
+receive recommendations for movies or restaurants.
+
+%  thus reducing the burden of sifting through irrelevant information. 
+% Personalization further enhances user experiences by tailoring content delivery to individual interests and behaviors, ensuring that users receive the most pertinent information. 
+% By harnessing these technological tools, we can navigate the information landscape more effectively, mitigating the challenges posed by information overload and empowering individuals to make informed decisions.
+
+When designing smart tools for infromation access, ensuring \emph{relevance} is paramount:
+users expect content that aligns closely with their interests and needs.
+But beyond relevance, \emph{diversity} and \emph{fairness} are equally crucial.
+Diversity ensures exposure to varied perspectives, 
+while fairness ensures equitable access to information.
+Integrating diversity and fairness into information-access systems has numerous benefits, 
+such as mitigating biases, 
+helping counter filter-bubble and rabbit-hole effects, 
+fostering a more inclusive and fair representation of different perspectives, and 
+promoting a well-rounded understanding of topics.
+
+While relevance, diversity, and fairness
+have been extensively studied in different areas of computer science, 
+including information retrieval, recommender systems, and machine learning,
+their interplay remains relatively understudied.
+We posit that incorporating diversity and fairness into modern information-access systems
+remains an unsolved problem, 
+offering ample space for fundamental research contributions.
+The \acronym\ project aspires to contribute in addressing 
+significant challenges in this area. 
+% More concretely, the project has the following goal.
+
+\medskip
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+{\bf High-level goal of \acronym:} 
+We will develop theoretical foundations and novel abstractions to 
+study notions of diversity and fairness in information-access systems.
+We will design algorithms for these problems with provable guarantees.
+Among diffrent information-access systems we will focus on 
+information-exploration systems, information networks, and two-sided information markets.
+\end{minipage}}
+
+{\color{red}\spara{Text below could also go to ``novelty''.}}
+
+\spara{Challenges.}
+The proposed project is of theoretical nature, 
+lying in the areas of information retrieval, recommender systems,  
+knowledge discovery, and algorithms design. 
+Achieving the project aim entails significant challenges. 
+First, we need to design novel abstractions that model faithfully system entities and their interactions, 
+e.g., semantic distances between content items or user behavior, 
+while capturing notions of diversity and fairness and their inter-play with relevance.
+Second, we will be dealing with noisy data generated by a diverse set of actors
+who exhibit complex behavior and may have adversarial motives, 
+thus, our methods need to be robust to such complexities.
+Third, we will be confronted with challenging optimization tasks, and thus, 
+we will need to develop scalable algorithms with theoretical guarantees on the solution quality.
+
+\iffalse
+\medskip
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+{\bf Hypothesis:} 
+We postulate that modern information-access systems suffer from lack of diversity 
+and unfair representation of content. 
+We hypothesize that such deficiencies can be mitigated by formulating novel abstractions
+and designing rigorous computational methods to support individuals in 
+maximizing diversity and improving fairness of the available content. 
+\end{minipage}}
+\fi
+
+\spara{Objectives.}
+Our overarching objective is to address deficiencies of modern information-access systems 
+with regard to lack of diversity and unfair representation of content.
+To achieve this objective we aim to consolidate existing approaches, 
+including our recent and ongoing work,  
+and push the state-of-the-art 
+in terms of introducing novel abstractions, 
+developing rigorous computational methods, and 
+performing evaluations on real-world applications.
+In particular, {\acronym} has the following research objectives. 
+%
+\begin{description}
+\setlength{\itemsep}{-4pt}
+\item[{Models and problems:}]
+Develop novel models and novel problem formulations that enable 
+obtaining a deeper understanding on phenomena related 
+to lack of diversity and fairness in  modern information-access systems.
+Focus on three specific domains: 
+\emph{information-exploration systems}, \emph{information networks}, and 
+\emph{two-sided information markets}.
+
+\item[{Algorithms:}]
+Develop computational methods for the formulated problems.
+Our methods will be designed for different computational settings, 
+e.g., combinatorial formulations, stochastic and uncertain data, 
+reinforcement learning, algorithms with predictions, and more.
+The proposed algorithms should be efficient %, 
+% should be able to deal with uncertainty, 
+and should offer theoretical guarantees.
+
+% \item[\manet\ {Limitations:}] Study the proposed structure-discovery problems under the different computational models in order to understand their fundamental limitations, and  develop hardness results or lower bounds.
+
+\item[{Applications:}]
+Apply the developed methodology on different application scenarios 
+and evaluate the resulting algorithms on real-world benchmark datasets.
+% Validate proof-of-concept by showcasing findings of the methods on different use cases. 
+Implement the developed algorithms and make them available to the scientific community.
+
+\item[{Research environment in KTH:}]
+Strengthen the area of algorithmic data analysis 
+at the department of computer science in KTH. 
+Nurture doctoral students and postdoctoral researchers in the topic of the project,
+and create synergies with other faculty working on 
+the foundations of data science, machine learning, and artificial intelligence.
+\end{description}
+
+
+\subsection*{2.~~~State of the art}
+
+\subsection*{3.~~~Significance and scientific novelty}
+
+\subsection*{4.~~~Project description}
+
+
+\subsubsection*{4.1.~~~Theory and methods}
+
+\subsubsection*{4.2.~~~Time plan and implementation}
+
+\subsubsection*{4.3.~~~Project organisation}
+
+
+
+\subsection*{5.~~~Need for research infrastructure}
+
+\subsection*{6.~~~International and national collaboration}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%               %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%    REBOUND    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%               %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{center}
+
+{\LARGE\bf REBOUND} % \vspace{2mm}\\ 
+\end{center}
+
+
+\subsection*{Section a. Background and objectives}
+
+Social media play a critical role in today's information society, 
+not only by connecting people with their friends, 
+but also by providing a medium where information is disseminated and public opinion is shaped.
+Initially it seemed that giving ordinary citizens the means to create content of their own
+and share their opinion publicly 
+can have only positive effects: increase the exposure to diverse ideas
+and improve the democratic process.
+However, during the past few years we have witnessed that
+the rise of online media has led to 
+a series of undesirable phenomena, 
+such as creation of information silos and increased polarization.
+More and more digital citizens find themselves in online environments
+where they only see opinions that confirm their preexisting beliefs,
+and as a result, they become ideologically segregated.
+
+\smallskip
+These negative aspects of social media have drawn a lot of attention recently.
+There has been a considerable amount of criticism, skepticism, 
+discussion in public forums, as well as calls % from stakeholders 
+to fix the problems. 
+Prominent media outlets, researchers, and think tanks have contemplated whether 
+``{\em social media is a threat to democracy}.''%
+\footnote{For example, see www.economist.com/leaders/2017/11/04/do-social-media-threaten-democracy,\\
+or www.weforum.org/agenda/2016/08/the-biggest-threat-to-democracy-your-social-media-feed/}
+Given all these concerns a natural question arises.
+
+\smallskip
+{\em How can we address the deficiencies encountered in today's online platforms  
+and how can we create environments in which online media 
+enable exchange of alternative views and promote constructive deliberation?}
+
+\smallskip
+This is certainly a complex problem that requires
+parallel work and cooperation of multiple parties: 
+owners of social-media platforms and
+traditional media outlets, 
+journalists,
+policy makers, 
+educators, 
+as well as independent academics. 
+It is also a cross-disciplinary research challenge that requires expertise in 
+sociology, political science, economics, engineering, design, and {\em computer science}.
+
+\smallskip
+The \acronym\ project aspires to contribute in addressing this complex problem
+by designing methods to perform large-scale data analysis so as to shed light to 
+phenomena such as bias, polarization, conflict, and 
+information silos in online media. 
+It will also contribute with methods
+that give users easier access to opposing ideas
+and incentives to explore and understand alternative view\-points. 
+More concretely, the project has the following goal.
+
+\medskip
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+{\bf High-level goal of \acronym:} 
+We will develop theoretical foundations and a concrete set of algorithmic techniques 
+to address deficiencies in today's online media.
+We will develop methods to discover structure and patterns 
+of segregation, conflict, and closeness in social-media systems.
+We will address the issues of 
+reducing bias and po\-lar\-iza\-tion, breaking information silos,
+and creating awareness of users to explore alternative view\-points.
+\end{minipage}}
+
+\spara{Challenges.}
+Achieving the project goal is an extremely challenging task for a number of reasons. 
+First, we will be dealing with noisy data, 
+generated by a diverse set of actors
+who exhibit complex behavior and may have adversarial motives.
+Additionally, data are highly dynamic:
+new events are taking place and inter\-actions between actors 
+are constantly evolving over time. 
+Second, we will deal with concepts that are not well-understood 
+and we will need to develop novel abstractions. %  and problem definitions. 
+% As a simple example, although one may have an
+% intuitive understanding of the claim ``{\em social media amplify the problem of echo chambers},''
+% there is no well-accepted definition for what constitutes an echo chamber, 
+% nor how to measure it.
+For instance, 
+while there is a well-motivated discussion 
+about how to combat the problem of bias and polarization in online media, 
+there is no understanding of what does this entail % , what are the trade-offs, 
+nor what could be the side effects of possible remedial actions.
+Third, we will be confronted with challenging computational tasks 
+that lead to difficult optimization problems. 
+Thus, it is desirable to develop methods 
+that offer approximation guarantees or other theoretical properties. 
+
+\iffalse
+\spara{Methodological approach.}
+We will pursue the project goal by
+following a methodology that aims to tackle the challenges outlined above.
+(1)~We will develop abstractions that capture the semantics of the application domain
+and we will provide formal problem definitions that capture our objectives.
+(2)~We will develop and work with theoretical frameworks that capture the noise and complexity 
+of real-world data. 
+(3)~We will develop scalable algorithms with theoretical guarantees on the solution quality. 
+\fi
+
+\spara{Hypothesis and objectives.}
+%
+% Our encompassing research objective is to 
+% develop a rigorous methodology in order to address 
+% deficiencies in today's online media, such as 
+% bias, conflict, and information silos. 
+The project is grounded on the following hypothesis. 
+
+\medskip
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+{\bf Hypothesis:} 
+We postulate that bias, conflict, polarization, and information silos
+are real phenomena in today's online media. 
+We hypothesize that these deficiencies can be alleviated by designing and building appropriate tools, 
+and that people can get interested to explore and engage with alternative viewpoints. 
+\end{minipage}}
+
+\medskip
+Our encompassing research objective is to test this hypothesis.
+To achieve this objective we aim to consolidate existing approaches, 
+including our recent work, 
+and push significantly the state-of-the-art 
+in terms of models, novel problem formulations, 
+improved algorithmic techniques, and applications.
+In particular, {\acronym} has the following concrete objectives. 
+%
+\begin{description}
+\setlength{\itemsep}{-1pt}
+\item[{Models:}]
+Develop novel models for analyzing data on news dissemination and online discussions in online media, 
+with the aim to obtain a deeper understanding on phenomena related to bias, polarization, and 
+information bottlenecks.
+Extend standard data-mining problem formulations for this particular application domain, 
+and formulate novel problem representations for the tasks specified in the three research thrusts of the project.
+
+\item[{Algorithms:}]
+Develop efficient algorithmic solutions for the formulated problems.
+Our algorithms should take into account the rich available data representations
+as well as the stochastic and noisy nature of the problem domain.
+The proposed algorithms should be efficient, 
+should be able to deal with uncertainty, and should offer theoretical guarantees.
+
+% \item[\manet\ {Limitations:}] Study the proposed structure-discovery problems under the different computational models in order to understand their fundamental limitations, and  develop hardness results or lower bounds.
+
+\item[{Applications:}]
+Apply the developed methodology on different application scenarios 
+and evaluate the resulting algorithms on real-world datasets.
+Validate proof-of-concept by showcasing findings of the methods on different use cases. 
+Implement the developed algorithms and make them available to the scientific community.
+
+\item[{Education:}]
+Nurture doctoral students and postdoctoral researchers.
+Educate them about fundamental algorithmic techniques,
+teach them the value of identifying important data-analysis problems, 
+and support them becoming independent researchers.
+\end{description}
+
+% \todo{access to data}
+
+\spara{State of the art.}
+%
+%% Bias and polarization in general, mechanisms
+%
+% The study of the phenomena of bias and polarization 
+% predates the era of the internet and social media.
+% The first works appear in the fields of psychology, 
+% social science, and political science. 
+A number of theories have been proposed in psychology and social sciences 
+in an attempt to {\em explain the mech\-a\-nisms} that result in various types
+of bias that are present in our society. 
+Those include the theories of 
+{\em cognitive dissonance}~\cite{festinger1962theory}, 
+\emph{selective exposure}~\cite{frey1986recent}, and
+\emph{biased assimilation}~\cite{lord1979biased}. 
+All these psychological mech\-a\-nisms, 
+together with other biases, such as, 
+\emph{algorithmic filtering} and \emph{personalization}~\cite{bozdag2013bias}, 
+are connected to the phenomenon of information silos and echo chambers
+in online media~\cite{pariser2011filter}.
+% Understanding how all these phenomena interact with each other and the precise
+% causality relations is an open research domain.
+% 
+% \smallskip
+With the wide availability of online media data, 
+a lot of work has been devoted in studying 
+controversy, polarization, bias, and conflict in social media. 
+In one of the first papers, Adamic and Glance
+study the link structure of blog posts on the 2004 US presidential election;
+they provide evidence that conservative blogs are linking 
+to each other more frequently and in a denser pattern~\cite{adamic2005political}. 
+Conover et al.\ study twitter data from congressional midterm elections
+and identify a highly-segregated partisan network structure
+by the means of graph partitioning~\cite{conover2011political}. 
+% Guerra et al.\ propose an alternative graph-structure measure 
+% based on the analysis of the boundary between communities~\cite{guerra2013measure}, 
+% while Morales et al.\ apply graph-diffusion techniques~\cite{morales2015measuring}. 
+
+\smallskip
+Echo chambers have been shown to exist in various forms of online media such as 
+blogs~\cite{gilbert2009blogs,wallsten2005political}, forums~\cite{edwards2013participants}, and 
+social-media sites~\cite{barbera2015tweeting,gromping2014echo,quattrociocchi2016echo}.
+An et al.\ analyzed the activity of twitter users who engage with political news
+and found that 90\% of the users directly follow news media of only one political leaning~\cite{an2014sharing}. 
+In a study performed in Facebook, Bakshy et al.\
+% measure the degree to which users with declared political affiliations 
+% consume cross-cutting content, i.e., 
+% content predominantly posted by users of opposing political affiliation~\cite{bakshy2015exposure}.
+% They 
+find that although users are exposed to a significant amount of cross-cutting content, 
+they opt to engage with proportionately less cross-cutting content~\cite{bakshy2015exposure}.
+% 
+% \smallskip
+A few recent papers have addressed the problem of 
+mitigating polarization and diffusing echo chambers. 
+The underlying ideas involve making users aware 
+of other users' stance on a given issue~\cite{liao2014can,liao2014expert}, 
+or revealing the bias of the news articles they read~\cite{munson2013encouraging}.
+In work pioneered in my research group, 
+we have studied the problem of reducing bias and polarization
+by the means of 
+recommending links of users to follow~\cite{garimella2017reducing},
+selecting users to promote campaigns~\cite{garimella2017balancing},
+and maximizing diversity~\cite{diversity-cascade,diversity-static}.
+
+\smallskip
+In summary, the problem of reducing bias and polarization in online information
+has already received some attention in the literature.
+However, the area is still largely undeveloped and most works are preliminary.
+The topic has attracted a lot of attention in the public discussion forum, 
+and there is exciting work ahead to be done in a range of disciplines, 
+including with no doubt computer science.
+
+
+\subsection*{Section b. Methodology}
+
+\begin{figure}[t]
+\begin{center}
+{\scalebox{0.96}{\small\input{rebound-structure}}}
+% {\small\input{rebound-structure}}
+\caption{\label{figure:structure}
+The structure of {\acronym}, depicting the research thrusts of the project, 
+the problem formulations we will consider, and the methods we will employ.}
+\end{center}
+\vspace{-4mm}
+\end{figure}
+
+The project is structured in three {\em research thrusts}:
+\discover, \explore, and \recommend.
+Each thrust specifies a research domain within the project
+and a set of concrete problems with common motivation and common vision.
+While to a large extent the problems within each thrust can be studied independently, 
+there are also strong connections and feedback from one thrust will be used to obtain 
+higher-quality results in the other.
+The structure of the project is shown in Figure~\ref{figure:structure}.
+In addition to the problems we will study within each thrust, 
+we also show the computational methods that we will employ. 
+% use to obtain solutions for these problems. 
+
+\smallskip
+With respect to methods, 
+emphasis will be given to combinatorial algorithms,
+building on the previous work of the PI 
+on developing combinatorial methods for data-mining problems.
+In particular, we will consider techniques such as 
+combinatorial optimization, 
+optimization of submodular functions, 
+local-search methods, 
+greedy algorithms, 
+dynamic pro\-gram\-ming, 
+linear-pro\-gram\-ming and semi\-def\-ini\-te-pro\-gram\-ming relaxations, 
+primal-dual methods, convex optimization, etc. 
+In addition, to deal with the stochastic nature of the data 
+we will develop probabilistic models and algorithms that handle uncertainty.
+We will also focus on designing scalable methods, 
+by applying techniques based on sampling and sketching~\cite{cormode2011synopses}. 
+The project also requires expertise on text analysis, 
+natural-language processing, visualization, and user studies. 
+These needs will be covered by hiring postdoctoral researchers with relevant expertise.
+
+\smallskip
+Next we overview the three research thrusts of \acronym.
+
+\subsubsection*{Research thrust 1: \discover}
+
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+In this research thrust we will develop novel computational methods 
+to discover patterns and structure related to 
+bias, polarization, conflict, and information silos in online media.
+We will focus on mining se\-man\-ti\-cal\-ly-annotated graphs
+with information extracted by text analysis, 
+mining dynamic and temporal networks, 
+and understanding the roles of individuals 
+during the information-dissemination process. 
+\end{minipage}}
+
+\medskip
+This thrust builds strongly on our preliminary work.
+In particular, we have considered the problem 
+of identifying controversial discussions on social media~\cite{garimella2018quantifying}.
+Our methods are designed to be applicable to topics in any domain 
+(e.g., political, economical, or cultural), and in a general setting.
+We have also addressed the question of devising a measure of controversy,
+which is applicable to any online discussion.
+More recently we devised a new study aimed to 
+understand the phenomenon of echo chambers in social media, 
+and to characterize distinct user types and their role in their local community~\cite{garimella2018political}.
+
+\smallskip
+In this project we will extend significantly our problem representations
+so as to obtain a deeper analysis and develop much more advanced knowledge-discovery methods.
+In particular, our existing work relies on analyzing plain graphs
+with no additional information regarding text or time. 
+In \acronym\ we will incorporate text information into the mining process.
+We will develop methods to extract semantic annotations from the textual data, 
+such as
+($i$) agreement between users; 
+($ii$) political leaning of users or content items; 
+($iii$) stance with respect to topics; 
+and so on.
+We will use this information to enrich our graph models,
+provide novel formulations for mining semantically-annotated graphs, 
+and then design efficient algorithms.
+
+\smallskip
+As an example, we will consider discussion graphs
+where edges are annotated with agreement (`$+$') or disagreement (`$-$'), 
+and thus, represented as {\em signed graphs}.
+In this setting we will consider the problems of discovering alliances 
+(dense subgraphs with many `$+$' and few `$-$' edges) 
+or conflicting communities
+(sets of vertices with many `$+$' and few `$-$' within sets and many `$-$' and few `$+$' across sets). 
+These are novel problems related to dense-subgraph discovery~\cite{rozenshtein2014event,sozio2010community-search,tatti2015density,tsourakakis2013denser}
+and correlation clustering~\cite{bansal2004correlation,gionis2007clustering}.
+
+\smallskip
+We will also leverage the temporal dimension of the data
+and study formulations that allow to model and discover 
+bias, polarization, and conflict in the setting of temporal networks.
+This thread will make strong connections with our previous work on 
+temporal networks~\cite{rozenshtein2016temporal, rozenshtein2016reconstructing, rozenshtein2017finding}
+Finally we will consider problem representations  
+related to motif discovery~\cite{aslay2018mining,coletto2017motif} and role mining~\cite{arockiasamy2016combinatorial} 
+in the context of \acronym.
+
+
+\subsubsection*{Research thrust 2: \explore}
+
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+In this research thrust we will develop methods to help users 
+understand better the global information landscape with respect to topics of their interest, 
+visualize stories with annotations about different viewpoints, and 
+increase their awareness about existing bias in the content they consume.
+\end{minipage}}
+
+\medskip
+The underlying idea here is to allow users to visualize their content consumption
+so that they become aware of possible biases in their ``news diet.'' 
+At the same time we want to provide them the capability to visualize 
+a more wide spectrum of information regarding a topic,
+and support them explore alternative viewpoints.
+Our preliminary work in this thrust
+includes a novel method for inferring political-leaning scores
+for user accounts and content sources in social media, 
+in a completely unsupervised manner~\cite{lahoti2018joint}.
+Those scores can be used in a number of different applications
+involving information-retrieval tasks or content visualization and exploration.
+
+\smallskip
+In \acronym\ we will push this direction significantly beyond the state of the art. 
+We will develop methods that produce comprehensive and understandable summaries 
+of topics of interest discussed in online media. 
+Our story summaries will contain information regarding the timeline of relevant events, 
+important actors, entities, or concepts involved in the story, 
+key persons participating in the discussion, and 
+pointers to informative content. 
+The summaries we will produce will allow users to understand
+($i$) how polarized is a given topic;
+($ii$) what is the spectrum of opinions about the topic;
+($iii$) who are the most authoritative actors supporting a given opinion; 
+($iv$) what is best available content for that opinion;
+($v$) what is the bias/position of media outlets regarding a topic; 
+and so on. 
+In addition, our framework will allow users to visualize their own position in the opinion space
+based on the content they have been exposed, 
+their interaction with other users, and the content they have shared.
+
+\smallskip
+Finally, leveraging our framework for exploration and interaction 
+% with content presented to the users, 
+we will develop methods to learn the probability 
+that a certain user is interested in exploring a given information item.
+These probabilities will be used to optimize relevance of recommendations
+in the third~thrust.
+
+
+\subsubsection*{Research thrust 3: \recommend}
+
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+In this research thrust we will 
+develop recommendation algorithms that aim to increase the overall diversity in the network and 
+balance information exposure of conflicting views. 
+We will also investigate the effect of different features 
+to the willingness of the users to explore viewpoints that conflict their opinion.
+\end{minipage}}
+
+\medskip
+Again, this thrust is strongly based on our preliminary results.
+In one of our most recent works we considered the problem of 
+selecting a set of representative content items
+(such as, news articles with varying opinions on a given topic)
+to summarize a larger set of items~\cite{consensus-k-median}. 
+This is a standard clustering problem, 
+but in addition we require to select representative items
+that are close to each other,
+and thus, they are not polarized.
+For the resulting problem we are able to provide scalable
+algorithms with approximation guarantees
+and show practical relevance in the application scenario
+of selecting non-polarized representatives.
+
+\smallskip
+Additionally, we have studied the setting where
+we ask to make relevant recommendations to users, 
+which however have positive externalities to the whole network.
+In particular,
+we have addressed the problems
+of balancing information exposure of different viewpoints in the network~\cite{garimella2017balancing},
+and maximizing network diversity, 
+where diversity is measured in different ways~\cite{diversity-cascade,diversity-static}.
+
+\smallskip
+In \acronym\ we will advance the state of the art in many directions.
+First, we will enrich our networks with semantic annotations 
+and will address recommendation problems in more realistic models. 
+We will relax our assumptions and we will consider settings with multiple viewpoints, 
+continuous polarity scores, 
+and more complex information-propagation models.
+We will study novel recommendation problems, 
+and will seek to resolve open problems in our current problem formulations.
+
+\subsection*{Section c. Timeliness, feasibility, and contingency planning}
+
+As it is becoming apparent that social-media platforms have many adverse consequences,
+including bias, polarization, conflict, and creation of information silos, 
+and as stakeholders are raising their voices to get those problems fixed, 
+achieving viable solutions will require cooperation among companies, policy makers, 
+and scientists in multiple disciplines, including academic computer scientists. 
+In this respect, the project is extremely timely.
+
+\smallskip 
+The PI is in a unique position to accomplish the goals of the project. 
+His profile brings together 
+the\-o\-ret\-i\-cal work on algorithms design,
+with development of practical data-mining methods, 
+and strong emphasis on applications.
+The practical aspect is further enhanced by a six-year experience in industrial research 
+(Yahoo!\ Research)
+and a network of collaborators in big social-media companies.
+The PI is leading a research team of seven people, 
+has been successful in international recruitment, 
+and his doctoral students have acquired internship positions in companies
+like Google, Facebook, Amazon, LinkedIn, etc.
+Recent graduates are currently working in Google, EPFL, 
+and University of Helsinki (assistant professor).
+
+\smallskip 
+The PI and his research team have pioneered a line of work on the project theme
+and have obtained several preliminary results~\cite{diversity-cascade,garimella2017reducing,garimella2017balancing,garimella2018quantifying,lahoti2018joint,diversity-static}.
+The objective of this project is to advance the state of the art in this important topic
+on multiple fronts. 
+In particular, we aim to work on more realistic models, 
+achieve stronger algorithmic results, 
+and resolve open problems. 
+We also aim to enlarge and strengthen the team with researchers of complementary skills, 
+and establish collaborations with industrial partners and scientists in other disciplines.
+Without the support of this project it will not be possible to accomplish these ambitious goals.
+
+\smallskip 
+The research team has strong experience in collecting data from platforms like twitter and reddit, 
+and much of our recent work has built on extensive data gathering.
+In addition, we will seek to establish collaborations with international online-media companies
+so that we can test our methods on real-world scenarios. 
+We will also will seek collaboration with local media companies in Helsinki, 
+such as
+Yle (Finland's national public broadcasting company)
+and Sanoma (a leading media group in the Nordic countries).
+
+
+\mpara{Risks.}
+\acronym\ sets ambitious goals and has high potential, 
+but at the same time it contains significant risks.
+One of our risks is the possibility 
+that a majority of people prefer to receive biased content
+and are not interested to explore conflicting viewpoints.
+This would be an in\-ter\-est\-ing finding for the project.
+In this case, our knowledge-discovery methods will still be useful, 
+but many of the the tools we will build they will be of interest to a smaller population.
+A second risk is that we will not be successful in devising 
+algorithms with quality guarantees for the most challenging problems. 
+In this case, we will make simplifying assumptions and 
+focus on devising heuristic methods. 
+A third risk is that we will not be able to establish high-profile industrial collaborations. 
+In this case, we will perform our analysis on datasets we will collect, 
+or public datasets, and will evaluate our algorithms using user studies. 
+
+\newpage
+{%\small
+\setlength{\bibsep}{1pt}
+\bibliographystyle{abbrv}
+\bibliography{references}
+}
+
+
+\end{document}
+
+
+
+
