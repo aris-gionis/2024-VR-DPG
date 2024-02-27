@@ -163,24 +163,89 @@ and create synergies with other faculty working on
 the foundations of data science, machine learning, and artificial intelligence.
 \end{description}
 
+\spara{Diversity vs.\ fairness.}
+
+
 
 \subsection*{2.~~~State of the art}
 
-The problems of maximizing diversity and promoting fairness have been studied 
+The tasks of maximizing diversity and promoting fairness have been studied 
 extensively in different contexts in computer science, 
-especially in recent times with the raising importance of \emph{responsible AI}~\cite{responsible-AI}.
+especially in recent times with the raising importance of \emph{responsible AI}~\cite{dignum2019responsible}.
 
-diversity as an optimization problem
+\spara{diversity as an optimization problem}
 
-diversity in recommender systems
+From the theoretical viewpoint, the literature mainly focuses on two notions of diversity: 
+\emph{coverage-based diversity}, relying on \emph{submodular} coverage functions~\cite{bach2013learning} 
+and \emph{pairwise dissimilarity-based} diversity, like \emph{dispersion}~\cite{hassin1997approximation}.
+Researchers have also attempted to formulate \emph{axioms} of diversity and study
+their implications~\cite{gollapudi2009axiomatic}. 
+A particularly appealing formulation is the \emph{max-sum diversity} problem~\cite{borodin2012max},
+which captures trade-off between diversity and relevance for item-selection problems.
+Solutions for max-sum diversity involve combinatorial methods~\cite{borodin2012max},
+convex programming~\cite{cevallos2016max} and 
+local-search~\cite{cevallos2019improved}, among other.
+Such formulations and techniques will be a basis for {\acronym}
+to study extensions and improved methods. 
 
-diversity in graphs
 
-fairness in ML
+\spara{diversity in recommender systems}
 
-diversity and fairness in information markets
+Diversity has also been acknowledged as a crucial component in recommender systems,
+shown to improve user experience~\cite{Castells2022}, 
+and thus, it has received considerable attention recently. 
+% ~\cite{on_unexpectedness, improving_aggregate, evaluating_novel_recs, diversity_top_n_recs, rank_relevance}.
+One of the most popular methods in information retrieval,
+seeking to strike a balance between diversity and relevance, 
+is the \emph{maximal marginal relevance} (MMR)~\cite{MMR}, 
+while many re-ranking strategies have also been proposed, 
+based on submodular functions~\cite{DUM}, 
+probabilistic matrix factorization~\cite{DPMF}, 
+and other.
 
-my work
+Several online and targeted user studies assessed the increase in user satisfaction when diversity is incorporated into the list of suggested items~\cite{diversity_top_n_recs, Castells2022}. For example, Allison et al.~\cite{algorithmic_confounding} show that, if diversity (besides other objectives) is not taken into account, the interactions between users and recommender systems are prone to homogenization and, consequently, low utility.
+
+The challenge of striking a balance between diversity and relevance has been explored both in the context of recommender systems and in the broader domain of information retrieval.
+For instance, one of the most popular methods in the literature of information retrieval is the \emph{maximal marginal relevance} (MMR)~\cite{MMR}. It employs a weighted linear combination of scores that evaluate both utility and diversity, offering a systematic way to address this critical aspect. 
+In the specific context of recommender systems, \citet{first_diversification} introduced one of the earliest methods for enhancing diversity. They use a greedy selection approach, where they pick items that minimize the similarity within a recommended list.
+\citet{accuracy-diversity_dilemma} present a solution based on random walks for the so-called \textit{accuracy-diversity dilemma}, i.e., the challenge in finding a profitable trade-off between the two measures. 
+This concept is also known as \textit{calibration}, as mentioned by~\citet{calibration}, and refers to the algorithm's capability to produce suggestions that do not under-represent (or ignore) the user's secondary areas of interest. 
+
+Several re-ranking strategies have also been proposed:
+\citet{dum} propose to greedily select items by maximizing the utility of a submodular function; 
+\citet{dpmf} suggest to optimize the diversity loss of items using probabilistic matrix factorization; 
+\citet{dpp} propose a determinantal point process (DPP) to re-rank the recommended items so as to maximize the determinant on the items' similarity~matrix. \citet{diverse_content} investigate the impact of diversity on music consumption, and propose two innovative models: a feed-forward neural ranker that produces dynamic user embedding, and a reinforcement learning-based ranker optimized on the track relevance. 
+%The former incorporates the user’s previous sessions to produce a dynamic user embedding; while the latter defines the reward based on whether the user found the track to be relevant.
+\emph{Reinforcement learning} is indeed a suitable solution for addressing the diversity problem. It plays a role in the work by \citet{multi-armed}, 
+where diversity is induced by adopting multi-armed bandits in the elicitation phase; and in the online learning framework proposed by \citet{linear_bandits}, where diversification is obtained by carefully balancing the exploration and exploitation of users' preferences and interests.
+Notably, these reinforcement learning-based approaches typically require a lengthy training phase, which can often be prone to stability issues. 
+% This is in contrast to our approach, which may offer a more efficient and stable solution.
+
+Several other \emph{neural-network models} have been applied to address the diversity problem. 
+\citet{diversification_vae_based} adopt a \emph{variational auto\-encoder} to induce targeted (i.e., topical) diversity. 
+\citet{enhancing_adaptivity} propose a \emph{bilateral branch network} to achieve a good trade-off between relevance and diversity, defined at either domain or user level. 
+\citet{dgcn} present a \emph{graph neural network} for diversified recommendations, 
+where node neighbors are selected based on inverse category frequency, 
+together with negative sampling for inducing diverse items in the embedding space.
+
+% \aris{How do these NN methods compare with our method?
+% Do they compete with our method?}
+% \erica{They do, since they optimize diversity (either in terms of distance or coverage) in their loss function. Indeed, we use the last cited one as a competitor.}
+
+% We argue that the reported approaches are either highly demanding in terms of time and/or computational resources, or rely on some heuristics not theoretically justified.
+
+In contrast to most of the approaches mentioned earlier, the recommendation strategy we introduce, \acronym, does not necessitate any form of training or hyperparameter tuning, it is computationally efficient, and is shown to provide both highly relevant and diverse suggestions.
+
+
+
+\spara{diversity in graphs}
+
+\spara{fairness in ML}
+
+\spara{diversity and fairness in information markets}
+
+\spara{my work}
+
 
 \subsection*{3.~~~Significance and scientific novelty}
 
