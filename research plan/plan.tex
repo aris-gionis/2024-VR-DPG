@@ -283,8 +283,165 @@ Also say the main novelty would be to study diversity and fairness in new settin
 
 \subsubsection*{4.1.~~~Theory and methods}
 
-\instructions{
-Describe the underlying theory and the methods to be applied in order to reach the project goal.}
+The project is structured along three {\em research themes}:
+\vspace{-1mm}
+\begin{description}
+\setlength{\itemsep}{-4pt}
+\item[{\exploration}\,:] 
+diversity and fairness for information exploration tasks;
+\item[{\networks}\,:]
+diversity and fairness in information networks; and 
+\item[{\markets}\,:]
+diversity and fairness in information markets.
+\end{description}
+\vspace{-1mm}
+\iffalse
+\emph{diversity and fairness for information exploration tasks} (\exploration), 
+\emph{diversity and fairness in information networks} (\networks), 
+\emph{diversity and fairness in information markets} (\markets), 
+\fi
+Each theme is characterized by a different domain
+for which we are aiming to ensure criteria of diversity and fairness. 
+Each domain corresponds to a distinct family of information-access systems, 
+has its own unique characteristics, 
+it will be modeled using different abstractions, 
+and we will employ different methods and techniques for solving the corresponding 
+computational tasks. 
+On the other hand, connections do exist, 
+for instance, common definitions for diversity and fairness will be used, 
+and thus, we will seek to identify synergies between the three themes
+and adopt ideas that turn out to be successful.
+
+With respect to methods, 
+emphasis will be given to combinatorial algorithms,
+building on the previous work of the PI 
+on developing combinatorial methods for data-analysis problems.
+In particular, we will consider techniques such as 
+combinatorial optimization, 
+optimization of submodular functions, 
+local-search methods, 
+greedy algorithms, 
+dynamic pro\-gram\-ming, 
+linear-pro\-gram\-ming and semi\-def\-ini\-te-pro\-gram\-ming relaxations, 
+primal-dual methods, convex optimization,
+stochastic gradient descent, etc. 
+Furthermore, we will explore ideas in new domains, 
+such as 
+algorithms with predictions~\cite{mitzenmacher2022algorithms} and
+reinforcement learning.
+
+Next we overview the three research themes of \acronym.
+
+
+\subsubsection*{Research theme 1: Diversity and fairness for information-exploration tasks}
+
+\noindent
+\hspace{-3mm}\colorbox{verylightmagenta}{
+\begin{minipage}{\textwidth}
+\ag{do we need a summary in a box?}
+\end{minipage}}
+
+\vspace{2mm}
+We consider an information system
+that stores a large collection of information items.
+Users interact with the system and can access the items through various means 
+such as keyword searches, recommendations, or combinations of those.
+We assume that users have different interests
+and the system has prior information about user interests and user behavior.
+Note that this is a general setting that can be used to model different scenarios, 
+for instance, web-search engines, e-commerce systems, video-sharing platforms, 
+or platforms for browsing and reading news articles.
+Our objective is to design methods that enable users to 
+\emph{explore the available information items in the system} through their interaction.
+We are interested in systems that offer items that are relevant to the user's interests, 
+but also satisfy criteria of diversity and fairness of representation.
+
+As discussed before, combining relevance with diversity is an archetypal problem
+in information retrieval and recommender systems, 
+and there is a plethora of methods to address it. 
+However, the majority of methods assume very simplistic models;
+for instance, \emph{find a set of $k$ items} 
+that optimize some function that combines relevance with diversity. 
+In the real world, information-exploration tasks are significantly more complex and more nuanced. 
+First, items are presented to users in an order, and not as a set.
+Second, users may click on some of the presented item, 
+initiating a new ``round'' of exploration. 
+Third, there is chance that users terminate their interaction with the system, 
+based on the relevance and novelty of the presented items,
+as well as the duration of the exploration session so far.
+
+Motivated by these observations, 
+we will formulate novel frameworks for information exploration
+that model \emph{user behavior} and aim to optimize 
+the total amount of knowledge accrued by the user during exploration, 
+while accounting for relevance and diversity.
+In our preliminary work, we have studied a simple version 
+of this problem where we ask to \emph{maximize expected diversity} 
+in presence of a probability that, depending on item relevance,  
+at any given step the user will terminate the exploration task. 
+The problem has very interesting connections to \emph{ordered Hamiltonian-path problem}, 
+and under mild assumptions we are able to design provable approximation algorithms.
+
+
+Tianyi 
+
+
+
+
+
+
+
+
+This thrust builds strongly on our preliminary work.
+In particular, we have considered the problem 
+of identifying controversial discussions on social media~\cite{garimella2018quantifying}.
+Our methods are designed to be applicable to topics in any domain 
+(e.g., political, economical, or cultural), and in a general setting.
+We have also addressed the question of devising a measure of controversy,
+which is applicable to any online discussion.
+More recently we devised a new study aimed to 
+understand the phenomenon of echo chambers in social media, 
+and to characterize distinct user types and their role in their local community~\cite{garimella2018political}.
+
+\smallskip
+In this project we will extend significantly our problem representations
+so as to obtain a deeper analysis and develop much more advanced knowledge-discovery methods.
+In particular, our existing work relies on analyzing plain graphs
+with no additional information regarding text or time. 
+In \acronym\ we will incorporate text information into the mining process.
+We will develop methods to extract semantic annotations from the textual data, 
+such as
+($i$) agreement between users; 
+($ii$) political leaning of users or content items; 
+($iii$) stance with respect to topics; 
+and so on.
+We will use this information to enrich our graph models,
+provide novel formulations for mining semantically-annotated graphs, 
+and then design efficient algorithms.
+
+\smallskip
+As an example, we will consider discussion graphs
+where edges are annotated with agreement (`$+$') or disagreement (`$-$'), 
+and thus, represented as {\em signed graphs}.
+In this setting we will consider the problems of discovering alliances 
+(dense subgraphs with many `$+$' and few `$-$' edges) 
+or conflicting communities
+(sets of vertices with many `$+$' and few `$-$' within sets and many `$-$' and few `$+$' across sets). 
+These are novel problems related to dense-subgraph discovery~\cite{rozenshtein2014event,sozio2010community-search,tatti2015density,tsourakakis2013denser}
+and correlation clustering~\cite{bansal2004correlation,gionis2007clustering}.
+
+\smallskip
+We will also leverage the temporal dimension of the data
+and study formulations that allow to model and discover 
+bias, polarization, and conflict in the setting of temporal networks.
+This thread will make strong connections with our previous work on 
+temporal networks~\cite{rozenshtein2016temporal, rozenshtein2016reconstructing, rozenshtein2017finding}
+Finally we will consider problem representations  
+related to motif discovery~\cite{aslay2018mining,coletto2017motif} and role mining~\cite{arockiasamy2016combinatorial} 
+in the context of \acronym.
+
+
+
 
 
 \subsubsection*{4.2.~~~Time plan and implementation}

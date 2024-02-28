@@ -8,7 +8,7 @@ POINTS
 
 Highlight differences and connections of diversity and fairness 
 
-Diversity and fairness in knowledge exploration  -- DiF-KE
+Diversity and fairness in knowledge exploration  -- DiF-IE
 -- diversity in ranking systems (MSR)
 -- incorporate user modeling
 -- papers with Erica / Honglian / Sijing
@@ -19,15 +19,16 @@ Diversity and fairness in knowledge exploration  -- DiF-KE
 -- Project with Tianyi
 	o  Hitting set + calibration (should probably go in connection to user modeling)
 
-Diversity and Fairness in market systems -- Div-MS
--- diversity in scenarios where supply meets demand
-
 Diversity and fairness in Information Networks -- DiF-IN
 -- republik / minimize exposure
 -- introduce new notions of diversity in graphs
 -- diversity densest subgraphs
 -- fairness-aware pagerank (Haoyun Zhou project)
 -- Add edges to improve information access
+
+Diversity and Fairness in Information markets -- DiF-MS
+-- diversity in scenarios where supply meets demand
+
 
 Diversity-aware and fair clustering -- DiF-C
 
