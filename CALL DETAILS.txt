@@ -33,9 +33,12 @@ RESEARCH DESCRIPTION
     	Describe briefly how the project relates to previous research within the area, and the impact the project may have in the short and long term. Describe also how the project moves forward or innovates the current research frontier.
     Project description. 
     	Describe the project design under the following headings:
-        Theory and method: Describe the underlying theory and the methods to be applied in order to reach the project goal.
-        Time plan and implementation: Describe summarily the time plan for the project during the grant period, and how the project will be implemented. Describe also any crucial risks or obstacles that may impact on the implementation, and your plan for managing these.
-        Project organisation: Clarify the contributions of yourself and any other researchers and/or key persons (including any doctoral students) to the implementation of the project, including a description of competences and roles in the project. Explain in particular how the time allocated by you (that is, your activity level) as project leader is suitable for the task, including the relationship with your other research undertakings.
+        Theory and method: 
+        	Describe the underlying theory and the methods to be applied in order to reach the project goal.
+        Time plan and implementation: 
+        	Describe summarily the time plan for the project during the grant period, and how the project will be implemented. Describe also any crucial risks or obstacles that may impact on the implementation, and your plan for managing these.
+        Project organisation: 
+        	Clarify the contributions of yourself and any other researchers and/or key persons (including any doctoral students) to the implementation of the project, including a description of competences and roles in the project. Explain in particular how the time allocated by you (that is, your activity level) as project leader is suitable for the task, including the relationship with your other research undertakings.
     Need for research infrastructure. 
     	Specify the project’s need for international and national research infrastructure. If you choose to use other infrastructures than those supported by the Swedish Research Council, and that are thereby open to all, you must justify this (also applies to local research infrastructure).
     International and national collaboration. 

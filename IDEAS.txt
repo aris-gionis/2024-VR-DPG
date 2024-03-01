@@ -22,11 +22,14 @@ Diversity and fairness in knowledge exploration  -- DiF-IE
 Diversity and fairness in Information Networks -- DiF-IN
 -- republik / minimize exposure
 -- introduce new notions of diversity in graphs
--- diversity densest subgraphs
 -- fairness-aware pagerank (Haoyun Zhou project)
--- Add edges to improve information access
+-- florian reduce diameter problem, but with colors / fairness 
+-- Add edges to improve information access (problem with Ece and Carlo?)
+-- local changes
+-- diversity densest subgraphs
 
-Diversity and Fairness in Information markets -- DiF-MS
+
+Diversity and Fairness in Information markets -- DiF-IM
 -- diversity in scenarios where supply meets demand
 
 
