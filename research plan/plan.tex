@@ -12,16 +12,15 @@
 
 
 \begin{center} 
-{\large Vetenskapsrådet: Distinguished professor grant within natural % } \vspace{1mm}\\ 
-% {\large 
-and engineering sciences 2024} \vspace{2.5mm}\\
-{\Large Research plan} \vspace{2mm}\\
-{\LARGE\bf {\proposaltitle} {\sc (}{\acronymtitle}{\sc )}}  \vspace{3mm} \\
-{\Large Aristides Gionis}  \\
+% {\large Vetenskapsrådet: Distinguished professor grant within natural and engineering sciences 2024} \vspace{2.5mm}\\
+{\Large Research plan} \vspace{3mm}\\
+{\Large\bf {\proposaltitle} {\sc (}{\acronymtitle}{\sc )}}  \vspace{3mm} \\
+{\Large Aristides Gionis} 
 \end{center}
 
 \subsection*{1.~~~Purpose and aims}
 
+%%%\vspace{-2mm}
 In the modern information age we are submersed in a constant stream of data from various sources, 
 ranging from the internet and social media to news outlets and podcasts. 
 While this wealth of information has the potential to empower individuals, 
@@ -34,28 +33,29 @@ to find reliable, relevant, and meaningful~content.
 This overload can lead to decision paralysis, reduced productivity, and cognitive overload, ultimately hindering our ability to make informed decisions and engage critically with the world around us. Addressing the problem of information overload requires not only technological solutions such as improved search algorithms and filtering mechanisms but also a concerted effort to cultivate digital literacy skills and promote mindful consumption habits among individuals.
 \fi 
 
-To mitigate the problem of information overload, 
-in addition to cultivating % digital literacy skills and promoting 
-mindful consumption habits, 
-it also requires \emph{technological solutions} tailored to the needs of individuals. 
-Advanced information-retrieval algorithms can help streamline search processes, 
+Mitigating the problem of information overload, 
+in addition to cultivating mindful consumption habits, 
+requires \emph{technological solutions} tailored to the needs of individuals. 
+Advanced \emph{information-retrieval algorithms} can help streamline search processes, 
 enabling users to find relevant content. 
 %  more efficiently amidst vast data pools. 
-Recommendation systems play a crucial role by suggesting personalized content 
+\emph{Recommender systems} play a crucial role by suggesting personalized content 
 based on users' preferences and past interactions. 
+\iffalse
 The challenge of information overload arises in various scenarios. 
 For instance, it occurs when users interact with search engines using keyword searches, 
 when peruse product reviews, 
 scroll through social-media timelines, or 
 receive recommendations for movies or restaurants.
+\fi
 
 %  thus reducing the burden of sifting through irrelevant information. 
 % Personalization further enhances user experiences by tailoring content delivery to individual interests and behaviors, ensuring that users receive the most pertinent information. 
 % By harnessing these technological tools, we can navigate the information landscape more effectively, mitigating the challenges posed by information overload and empowering individuals to make informed decisions.
 
-When designing smart tools for infromation access, ensuring \emph{relevance} is paramount:
-users expect content that aligns closely with their interests and needs.
-But beyond relevance, \emph{diversity} and \emph{fairness} are equally crucial.
+When designing smart tools for information access, ensuring \emph{relevance} is paramount:
+users expect~content that aligns closely to their interests and needs.
+Beyond relevance, however, \emph{diversity} and \emph{fairness} are equally crucial.
 Diversity ensures exposure to varied perspectives, 
 while fairness ensures equitable access to information.
 Integrating diversity and fairness into information-access systems has numerous benefits, 
@@ -65,13 +65,13 @@ fostering a more inclusive and fair representation of different perspectives, an
 promoting a well-rounded understanding of topics.
 
 While relevance, diversity, and fairness
-have been extensively studied in different areas of computer science, 
-including information retrieval, recommender systems, and knowledge discovery,
+have been extensively studied in different areas in computer science, 
+% including information retrieval, recommender systems, and knowledge discovery,
 their interplay remains relatively understudied.
 We posit that incorporating diversity and fairness into modern information-access systems
 remains an unsolved problem, 
 offering ample space for fundamental research contributions.
-The \acronym\ project aspires to contribute in addressing 
+The \acronym\ project aspires to address
 significant challenges in this area. 
 % More concretely, the project has the following goal.
 
@@ -83,7 +83,7 @@ significant challenges in this area.
 We will develop theoretical foundations and novel abstractions to 
 study notions of diversity and fairness in information-access systems.
 We will design algorithms for these problems with provable guarantees.
-Among diffrent information-access systems we will focus on 
+Among different information-access systems we will focus on 
 information-exploration systems, information networks, and two-sided information markets.
 \end{minipage}}
 
@@ -103,13 +103,13 @@ maximizing diversity and improving fairness of the available content.
 \end{minipage}}
 \fi
 
-\spara{Objectives.}
-Our overarching objective is to address deficiencies of modern information-access systems 
-with regard to lack of diversity and unfair representation of content.
+\mpara{Objectives.}
+Our overarching objective is to address deficiencies of modern information-access systems~with 
+regard to lack of diversity and unfair representation of content.
 To achieve this objective we aim to consolidate existing approaches, 
 including our recent and ongoing work,  
 and push the state-of-the-art 
-in terms of introducing novel abstractions, 
+by intro\-duc\-ing novel abstractions, 
 developing rigorous computational methods, and 
 performing evaluations on real-world applications.
 In particular, {\acronym} has the following research objectives. 
@@ -155,28 +155,28 @@ While they share some common goals, such as promoting inclusivity and reducing d
 they address different dimensions and require distinct methodologies and techniques. 
 
 Diversity maximization often relies on optimizing distance-based or coverage-based objectives, 
-designed to ensure that the outputs generated by a system cover a wide range of perspectives
-and promote heterogeneity. 
-Diversity maximization is often applied in recommendation systems, search engines, 
-and other decision-making systems where providing a diverse set of options or perspectives is desirable.
-
+designed to ensure that the outputs generated by a system cover a wide range of perspectives. 
+Diversity maxi\-mi\-za\-tion is often applied in recommendation systems, search engines, 
+and other decision-making systems. 
+% where providing a diverse set of options or perspectives is desirable.
+%
 On the other hand, 
 fairness aims to mitigate biases and ensure equitable treatment of individuals or groups.
-Fairness methods are based on ensuring or optimizing fairness criteria, or post-processing techniques. 
+% Fairness methods are based on ensuring or optimizing fairness criteria, or post-processing techniques. 
 Fairness is often studied in contexts where decisions may impact individuals or groups differently, 
 and finds applications in domains such as hiring, criminal justice, and healthcare.
 
 In this project we consider that fairness concepts can be extended to other contexts,  
 beyond individuals and demographic groups. 
-For instance, we can talk about fairness in the context of news recommender systems, 
-asking to ensure that a set of recommender news articles represent fairly the political spectrum.
-In this way, similar to diversity, we can study fairness in the context of different information-access systems. 
-Note however that diversity alone does not guarantee fairness, 
-and fairness considerations may extend beyond simply ensuring diversity 
-in the outputs of a machine learning model.
+For instance, we can talk about fairness in the context of a news recommender system, 
+asking to ensure that a set of news articles represent fairly the political spectrum.
+In this way, similar to diversity, we can study fairness in the context of information-access systems.
+Furthermore, note that diversity and fairness are not substitute for one another, 
+but they are complementary concepts.
 
 \subsection*{2.~~~State of the art}
 
+%%%\vspace{-2mm}
 Maximizing diversity and promoting fairness have been studied 
 extensively in different contexts in computer science, 
 especially in recent times with the raising importance of \emph{responsible AI}~\cite{dignum2019responsible}.
@@ -188,50 +188,48 @@ and their connection with this proposal.
 From the theoretical viewpoint, the literature mainly focuses on two notions of diversity: 
 \emph{coverage-based diversity}, relying on \emph{submodular} coverage functions~\cite{bach2013learning} 
 and \emph{pairwise dissimilarity-based} diversity, like \emph{dispersion}~\cite{hassin1997approximation}.
-Researchers have also attempted to formulate \emph{axioms} of diversity and study
-their implications~\cite{gollapudi2009axiomatic}. 
-A particularly appealing formulation is the \emph{max-sum diversity} problem~\cite{borodin2012max},
-which captures trade-off between diversity and relevance for item-selection problems.
+Diversity has also been studied in an \emph{axiomatic} framework~\cite{gollapudi2009axiomatic}. 
+An appealing formulation is the \emph{max-sum diversity} problem~\cite{borodin2012max},
+which captures trade-offs between diversity and relevance.
 Solutions for max-sum diversity involve \emph{combinatorial methods}~\cite{borodin2012max} or
 \emph{convex programming}~\cite{cevallos2016max}, 
 % \emph{local search}~\cite{cevallos2019improved}, 
 among other.
-Such formulations and techniques will be a basis for {\acronym}
+Such formulations and techniques will form a basis for {\acronym}
 to study extensions and improved methods. 
 
 % \spara{diversity in recommender systems}
 
-Diversity has also been acknowledged as a crucial component in \emph{recommender systems},
-shown to improve user experience~\cite{Castells2022}, 
-and thus, it has received considerable attention recently. 
+Diversity has also been studied in \emph{recommender systems},
+where it has been shown to improve user experience~\cite{Castells2022}.
+% and thus, it has received considerable attention recently. 
 % ~\cite{on_unexpectedness, improving_aggregate, evaluating_novel_recs, diversity_top_n_recs, rank_relevance}.
-One of the most popular methods in \emph{information retrieval},
-seeking to strike a balance between diversity and relevance, 
+One classic method in \emph{information retrieval}
+% seeking to strike a balance between diversity and relevance, 
 is the \emph{maximal marginal relevance} (MMR)~\cite{MMR}, 
-while many other strategies have proposed to 
+while many other strategies seek to 
 maximize some utility function that combines relevance and diversity~\cite{DUM,DPMF}.
 % based on submodular functions~\cite{DUM}, probabilistic matrix factorization~\cite{DPMF},  and other.
-In \acronym we aim to extend the state-of-the-art significantly, 
+In this project, we aim to extend the state of the art 
 by incorporating models of \emph{user behavior}, 
-investigating approaches based \emph{reinforcement learning}, 
+investigating approaches based on \emph{reinforcement learning} and \emph{algorithms with predictions}, 
 and studying novel notions for \emph{fair representation} of recommended items. 
 
 % \spara{diversity in graphs}
 
-Diversity and fairness in graph settings is a significantly less studied area,
+Diversity and fairness in graph settings is significantly less-studied area,
 compared to item-selection and recommender-systems problems.
 Still several ideas have been investigated, 
 such as \emph{adding} or \emph{rewiring graph edges} for
 \emph{reducing polarization}~\cite{adriaens2023minimizing,cinus2023rebalancing,haddadan2022reducing},
 \emph{mitigating exposure to harmful content}~\cite{coupette2023reducing,fabbri2022rewiring}, 
 or \emph{improving fairness for the Page\-Rank algorithm}~\cite{tsioutsiouliklis2022link}.
-Extending this line of work for diversity and fairness in graphs
-by introducing new models and methods
-is a central goal of the \acronym project.
+Extending this line of work and introducing new models and methods for graph settings
+is a central goal of \acronym.
 In addition, while there is a growing amount of literature for 
 recommendations in two-sided information markets,
 addressing also fairness issues~\cite{do2021two,wang2021user}, 
-the area is still not well explored and there is still lack of a unified theory
+the area is still not well explored and there is lack of a unified theory
 and established methods.
 
 % \spara{fairness in ML}
@@ -242,18 +240,16 @@ While many surveys and tutorials can be found online~\cite{caton2020fairness,meh
 we note that our project is more closely related to notions of
 \emph{bias and fairness in unsupervised machine learning}, 
 such as 
-\emph{fair clustering}~\cite{chierichetti2017fair}, 
-\emph{diversity-aware clustering}~\cite{thejaswi2021diversity}, 
+\emph{fair clustering}~\cite{chierichetti2017fair}
+% \emph{diversity-aware clustering}~\cite{thejaswi2021diversity}, 
 and \emph{fair graph mining}~\cite{dong2023fairness}.
-
-% \spara{my work}
-
-Notably, together with my team and research collaborators, 
-we have pioneered work on many of the above topics,
+%
+The PI, together with his team and research collaborators, 
+have pioneered work on many of the above topics,
 including
 different formulations for diversity in network analysis~\cite{adriaens2023minimizing,cinus2023rebalancing,coupette2023reducing,oettershagen2024finding}
 diversity in ranking problems~\cite{zhang2022ranking}, 
-as well as in data clustering~\cite{thejaswi2021diversity}.
+as well as for diversity-aware clustering~\cite{thejaswi2021diversity}.
 
 \subsection*{3.~~~Significance and scientific novelty}
 
@@ -267,38 +263,46 @@ Maybe some comments from state of the art can be moved here, or rephrased. \\
 Also say the main novelty would be to study diversity and fairness in new settings.
 }
 
+%%%\vspace{-2mm}
 \para{Significance.}
-Our project lies in the intersection of several computer-science areas:
+Our project lies in the intersection of different subjects in computer-science:
 information retrieval, recommender systems, knowledge discovery, and algorithms design. 
-While the themes of diversity and fairness have already been studied in many different contexts,
+While many of the themes have been studied in different contexts,
 % Diversity in information access ensures that visible content 
 % encompasses a wide range of perspectives, cultures, and voices.
 % Additionally, fairness ensures that provided information is equitable and unbiased.
-in this project we will push forward the state of the art %  in the area
-by studying the concepts of diversity and fairness in new types of information-access systems.
-By integrating  diversity and fairness into information-access systems 
-we can create platforms foster a more equitable and informed society, 
+in this project we will push forward the state of the art 
+by studying diversity and fairness in new settings.
+Our methods will contribute to creating platforms that foster a more equitable and informed society, 
 and mitigate the propagation of harmful biases online.
 
 \spara{Scientific novelty.}
-The project will offer novel contributions in several different directions.
+The project will make contributions in several different directions.
 First, we will design novel frameworks that model faithfully system entities and their interactions, 
 while capturing notions of diversity and fairness and their inter-play with relevance.
 We will seek to establish a unified framework and common methodologies for 
-understanding diversity and fairness in the different types of information-access systems we will study. 
-As it is common in fair ML literature, we will rely on social justice theories, 
+studying diversity and fairness in the different settings. 
+As it is common in fairness ML literature, we will rely on social-justice theories, 
 such as distributive justice and equitable treatment of individuals, 
 as well as in social welfare objectives. 
-In terms of methods, emphasis will be given to combinatorial algorithms, building on the previous work of the PI. 
+In terms of methods, emphasis will be given to combinatorial algorithms, 
+building on the previous work of the PI. 
 In particular, we will consider techniques 
 such as combinatorial optimization, 
 optimization of submodular functions, 
 local-search methods, 
-greedy algorithms, semidefinite-programming relaxations, and convex optimization. 
+greedy algorithms, 
+semidefinite-programming relaxations, and convex optimization. 
+Finally, we will investigate novel 
+approaches based on {reinforcement learning} and {algorithms with predictions}~\cite{mitzenmacher2022algorithms}.
 
+
+\vspace{-1mm}
 \subsection*{4.~~~Project description}
 
+\vspace{-1mm}
 \subsubsection*{4.1.~~~Theory and methods}
+\vspace{-1mm}
 
 The project is structured along three {\em research themes}:
 \vspace{-1mm}
@@ -312,18 +316,14 @@ diversity and fairness in information networks; and
 diversity and fairness in information markets.
 \end{description}
 \vspace{-1mm}
-Each theme is characterized by a different domain
-for which we are aiming to ensure criteria of diversity and fairness. 
-Each domain corresponds to a distinct family of information-access systems, 
-has its own unique characteristics, 
-it will be modeled using different abstractions, 
-and we will employ different methods and techniques for solving the corresponding 
-computational tasks. 
-On the other hand, connections do exist, 
-for instance, common definitions for diversity and fairness will be used, 
-and thus, we will seek to identify synergies between the three themes
-and adopt ideas that turn out to be successful.
+Each theme is characterized by a distinct type of an information-access system, 
+having its own unique characteristics, 
+so, different abstractions and methods will be used. 
+Connections among the themes~do~exist, 
+% for instance, common definitions for diversity and fairness, 
+and thus, we will seek to identify useful~synergies. 
 
+\iffalse
 With respect to methods, 
 emphasis will be given to combinatorial algorithms,
 building on the previous work of the PI 
@@ -341,11 +341,13 @@ Furthermore, we will explore ideas in new domains,
 such as 
 algorithms with predictions~\cite{mitzenmacher2022algorithms} and
 reinforcement learning.
+\fi
 
 Next we overview the three research themes of \acronym.
-
+\vspace{-3mm}
 
 \subsubsection*{Research theme 1: Diversity and fairness for information-exploration tasks}
+\vspace{-1mm}
 
 \iffalse
 \noindent
@@ -358,57 +360,59 @@ Next we overview the three research themes of \acronym.
 \fi
 
 We consider an information system
-that stores a large collection of information items.
-Users interact with the system and can access the items through various means 
+that stores a large collection of content items.
+Users interact with the system and can access the items through various means, 
 such as keyword searches, recommendations, or combinations of those.
 We assume that users have different interests
 and the system has prior information about user interests and user behavior.
 This is a general setting that can model different scenarios, 
-for instance, web-search engines, e-commerce systems, video-sharing platforms, 
+e.g., web-search engines, e-commerce systems, 
 or platforms for browsing and reading news articles.
 Our objective is to design methods that enable users to 
-\emph{explore the available information items in the system} through their interaction.
-We are interested in systems that offer items that are relevant to the user's interests, 
-but also satisfy criteria of diversity and fairness of representation.
+interact with the system and 
+\emph{explore the available information}.
+We are interested in systems that enable users to discover items that are relevant to their interests, 
+while satisfying criteria of diverse and fair representation.
 
-As discussed before, combining relevance with diversity is an archetypal problem
-in information retrieval and recommender systems, 
-and there is a plethora of methods to address it. 
-However, the majority of methods assume very simplistic models;
+Most existing methods 
+% in information retrieval and recommender systems
+consider simplistic models for this problem;
 for instance, \emph{find a set of $k$ items} 
 that optimize some function that combines relevance with diversity. 
-In the real world, information-exploration tasks are significantly more complex and more nuanced. 
+In the real world, however, information-exploration tasks are significantly more complex. 
 First, items are presented to users in an order, and not as a set.
 Second, users may click on some of the presented item, 
 initiating a new ``round'' of exploration. 
-Third, there is chance that users terminate their interaction with the system, 
+Third, users may terminate their interaction with the system at any point,
 based on the relevance and novelty of the presented items,
-as well as the duration of the exploration session so far.
+and the duration of their exploration session so far.
 
 Motivated by these observations, 
 we will introduce novel frameworks for information-exploration tasks
-that model \emph{user behavior} and aim to optimize 
+that model \emph{user behavior} and aim to maximize 
 the total amount of knowledge accrued by the user during exploration, 
-thus, provisioning for relevance and diversity in an intuitive manner.
+thus, combining relevance and diversity in a more intuitive way.
 In our preliminary work, we have studied a simple version 
-of this problem where we ask to \emph{maximize expected diversity} 
-in presence of probabilities that users may terminate the exploration task
-at any given step of their interaction with the system.
-Such probabilities can be estimated based on the relevance and novelty
-of the items presented to them.
-The problem has interesting connections to \emph{ordered Hamiltonian-path problem}, 
+of this problem where we ask to \emph{maximize the expected diversity} of discovered content
+in the presence of the probability that a user 
+may terminate exploration if they do not discover interesting content.
+Such a probability can be estimated from user--item relevance scores.
+The problem has interesting connections to the \emph{ordered Hamiltonian-path problem}, 
 and under mild assumptions we are able to design approximation algorithms
 with provable guarantees.
 In this project we aim to devise improved methods
 and extend our framework to more sophisticated user-behavior models.
+As a way to find optimal recommendation rankings in the presence of unknown user actions, 
+we will also model user behavior in the setting of 
+\emph{algorithms with predictions}~\cite{mitzenmacher2022algorithms}.
 
 Another consideration in the information-exploration theme
 is to consider \emph{fair representation of content} along different dimensions. 
-For example, when recommending news articles for a user, 
-it is important to considering presenting more than one article from the same story
-so as to ensure \emph{coverage} of different sources with respect to their \emph{political leaning}, 
+As an example, when recommending news articles to a user, 
+it is important to present more than one article from the same story,
+in order to ensure \emph{coverage} of different sources with respect to their \emph{political leaning}, 
 as well as with respect to their \emph{stance} towards important entities in the stories. 
-To infer entities and stances towards them we will use standard NLP toolboxes and large language models.
+% To infer entities and stances towards them we will use standard NLP toolboxes and large language models.
 Additionally, we want to select stories that are well-align with user interests. 
 This is relevant to the topic of \emph{calibrated recommendations}~\cite{wang2022improving}.
 In \acronym, we will develop methods for recommendations that 
@@ -419,46 +423,40 @@ Finally, we will study the information-exploration task using \emph{reinforcemen
 The idea would be to formulate the task as a bandit problem
 where the reward depends on actions performed in earlier steps, 
 quantifying diversity and fairness considerations. 
-The problem can be cast as combinatorial multi-armed bandit~\cite{chen2013combinatorial}, 
+The problem can be cast as a combinatorial multi-armed bandit~\cite{chen2013combinatorial}, 
 which will be the starting point for our research. 
 
-\subsubsection*{Research theme 2: Diversity and fairness in information networks}
 
-In this theme we focus on information networks. 
+\vspace{-1mm}
+\subsubsection*{Research theme 2: Diversity and fairness in information networks}
+\vspace{-1mm}
+
+In the second research theme we will focus on information networks. 
 As before, we consider a general setting, 
-where networks are used to model a variety of real-world scenarios
-representing entities and their relationships.
-Examples include 
-social networks connecting people, 
-hyperlink networks linking web pages, or 
-recommendation networks consisting of what-to-consume-next recommendations
-in a platform like youtube.
-We view networks as systems where information can be spread and content can be consumed. 
-Information diffusion and content consumption in a network
-is typically modeled via a dynamic process, such as a random walk, 
+where networks may represent
+social networks, 
+hyperlink graphs, or 
+``recommendation networks'' consisting of what-to-consume-next recommendations.
+We view networks as systems where information spreads and content is consumed. 
+Information spread and content consumption
+is typically modeled via a dynamic process, such as random walks, 
 shortest paths, local search, etc.
 
-We additionally assume that the network nodes are labeled according to certain attributes, 
-for instance, demographic groups in social networks, 
-web page categories in hyperlink networks, 
-content type in recommendation networks, and so on.
-As a result of the 
-The node attributes coupled with the network structure may give rise to 
-\emph{structural bias} being present in the network.
-As an example, contacts in a social network are more likely to have similar views on a topic, 
-and thus, when navigating a network one may encounter bias regarding views on that topic.
-The problem of mitigating the phenomenon of structural bias in information networks is an emerging topic, 
-and many recent papers have addressed related questions~\cite{fabbri2022rewiring,haddadan2022reducing}, 
-including papers by the PI and his 
-team~\cite{adriaens2022diameter,adriaens2023minimizing,cinus2023rebalancing,coupette2023reducing}.
-Typical questions are to identify network interventions, 
+We additionally assume that network nodes are labeled according to certain attributes, 
+e.g., demographic groups in a social network, or 
+web page categories in a hyperlink graph. 
+The confluence of network structure with node attributes typically gives rise to 
+\emph{network structural bias}.
+For example, contacts in a social network are more likely to have similar views on a topic, 
+and thus, when navigating a network one may encounter biased information about the topic.
+The problem of mitigating structural bias in information networks is an emerging topic, 
+and many recent papers have addressed related questions~\cite{adriaens2022diameter,adriaens2023minimizing,cinus2023rebalancing,coupette2023reducing,fabbri2022rewiring,haddadan2022reducing}.
+Typical research questions are to identify network interventions, 
 such as, edge additions, re\-wirings, or re\-weightings, 
 to optimize given measures of bias or polarization.
 
-We aim to advance the state of the art in this topic
-along many directions. 
-First, many of the proposed techniques consider only two groups of nodes in the network, 
-i.e., a single attribute with only two values.
+In this project, we aim to advance the state of the art in in many different directions. 
+First, many of the proposed techniques consider only two groups of nodes.
 Extending the existing methods for more than two groups, 
 to account for realistic demographic scenarios or topics with multiple viewpoints, 
 is a non trivial problem.
@@ -466,65 +464,65 @@ Second, while many of the existing works consider the problems of minimizing bia
 the issues of diversity and fairness in information networks have not been studied.  
 We propose to study a novel measure of diversity with respect to random-walk navigation, 
 defined as the \emph{group cover time}, i.e., 
-the expected time to visit at least one node of each color
+the expected time to visit at least one node from each group
 in a random walk starting from a given node.
 Our goal is to design network-intervention methods to 
 optimize this diversity measure.
 
 Additionally, while most methods consider random-walk navigation for information access, 
 it is also interesting to study navigation models based on shortest-path distances. 
-In our earlier work we studied the problem of adding edges in order to minimize the network diameter, 
-with degree constraints~\cite{adriaens2022diameter}.
-As our model does not consider any node attributes, 
-we aim to extend the problem in settings with node attributes. 
-The goal is to identify small sets of network interventions
-to optimize information access among the different groups in the network.
+We recently studied the problem of minimizing the network diameter, 
+while adding a small number of edges and respecting degree constraints~\cite{adriaens2022diameter}.
+% As our model does not consider any node attributes, 
+We aim to extend this problem in settings with node attributes. 
+The goal is to identify a small number of network interventions
+to optimize information access among different groups in the network.
 
-In another direction, existing methods typically consider \emph{global interventions}, 
-that is, they seek to identify a small number of interventions so as to 
-optimize a global network objective. 
-However, it is particularly interesting to study settings for \emph{local interventions}, 
-where we aim to provide \emph{recourse actions} for a particular node of interest in the network, 
-so as to optimize diversity and fairness measures for that node. 
-One challenge here is to ensure such actions do not degrade 
-the corresponding measures of other nodes in the~network. 
-\ag{social welfare?}
+Additionally, existing methods mainly consider \emph{global interventions}, 
+i.e., they seek to optimize a global network objective. 
+It will be particularly interesting to study settings for \emph{local interventions}, 
+where we aim to provide \emph{recourse actions} for a particular node in the network, 
+in order to optimize diversity and fairness measures for that node. 
+One challenge here is to ensure that such actions do not degrade 
+the corresponding measures for other nodes in the~network. 
 
 Finally, in all of the previous cases it is assumed that interventions are certain, 
 e.g., edges can be added with probability~1.
-In some cases, interventions correspond to link recommendations, 
+In many cases, interventions correspond to link recommendations, 
 which are adopted with a certain probability
-(which often can be estimated).
-Thus, it will be extremely interesting to study versions of those problems
+(and often the adoption probability can be estimated).
+Thus, it will be interesting to study versions of those problems
 in the presence of \emph{uncertainty} for the proposed interventions.
 
 \ag{fairness-aware pagerank?}
 
+\vspace{-1mm}
 \subsubsection*{Research theme 3: Diversity and fairness in information markets}
+\vspace{-1mm}
 
 For the previous two research themes it is assumed that the content items are fixed
-and notions of diversity and fairness are pertinent exclusively to the users of the 
-system and to their view on the information they receive.
+and notions of diversity and fairness are pertinent exclusively to the information that users receive. 
 On the other hand, in many cases, modern information-access systems are \emph{two sided},
-resembling an \emph{information market}, 
+resembling \emph{information markets}, 
 where the users of the system are both \emph{consumers} and \emph{producers} of content.
 Examples of such systems include:
-platforms used for content sharing, like YouTube (for videos) or Spotify (for music);
-platforms used to facilitate physical commodity markets, like apartments for rent or second-hand clothes; 
-platforms used for advertising and seeking jobs, like LinkedIn; and many other.
-
+music-sharing platforms, like Spotify;
+platforms used to facilitate physical-commodity markets, like renting apartments; 
+platforms used for advertising and seeking jobs, like LinkedIn; and other.
+%
 In such an information-market system, 
-consumers are interested in finding valuable and pertinent content to satisfy their needs, 
-whether for education, entertainment, or decision-making purposes. 
+consumers are interested in finding valuable content to satisfy their needs.
+% whether for education, entertainment, or decision-making purposes. 
 On the other side, content producers aim to attract the attention of consumers 
-by creating and offering content that meets their demands or interests.
-For the success of such a market system, both sides need to receive sufficient utility, 
-either at the form of relevant content for the consumers 
-or by the size and attention of their audience for the producers, 
-otherwise either of two parties may leave the system. 
+by creating content that is valuable to the consumers.
+% For the success of such a market system, 
+Both sides need to receive a sufficient amount of utility, 
+% either at the form of relevant content for the consumers 
+% or by the size and attention of their audience for the producers, 
+otherwise they may leave the system. 
 
-It is also clear that in addition to the respective relevance and attention objectives, 
-there are many diversity and fairness considerations at play. 
+It should be clear that, in addition to the respective relevance and attention objectives, 
+there are important diversity and fairness considerations at play. 
 From the side of consumers, 
 content diversity is important to enrich their experience and
 fairness of representation is required so that they receive a well-balanced
@@ -533,7 +531,7 @@ In addition, we would like to ensure that the system does not treat unfairly
 groups of users based on certain user attributes, e.g., gender or ethnicity. 
 From the side of producers, 
 fairness is paramount for ensuring that all producers have equal opportunities
-for their content to be visible to users, 
+for their content to be visible to consumers, 
 instead of, say, favoring only the most popular producers, 
 or members of a protected group. 
 
@@ -552,23 +550,23 @@ and welfare economics in two-sided information markets.
 As in the previous research themes, 
 we will incorporate models of user behavior in the system, 
 study their effects to measures of interest, 
-and design methods that produce recommendations, or ranked lists, 
+and design methods that produce recommendation sets, or ranked lists, 
 that optimize such measures. 
-We will also consider the fact that information markets are often hosted inside networks
+We will also consider the fact that information markets are often hosted inside networking environments
 (e.g., LinkedIn is a social network serving as a job-market platform), 
 and will leverage ideas from research theme \#2 (\networks).
-To the best of our knowledge this idea has not been explored.
 
 In addition, we will study dynamic aspects of diversity and fairness in information markets,
-as consumers and producers are likely to stay engaged within multiple sessions, 
-consuming and producing a series of content.
-Finally, in addition to the individual needs and utilities of consumers and producers separately, 
+as consumers and producers are likely to consume and produce a series of content within several sessions.
+Finally, in addition to considering the individual needs and utilities of the system actors separately, 
 we will introduce notions of social welfare, 
-and seek to understand the need for global social-good objectives in information markets.
+and seek to understand the need for global social-good objectives.
 For example, diversity can play a role in ensuring a healthy level of information flow in the system
 and avoiding fragmentation the users into isolated communities.
 
+\vspace{-1mm}
 \subsubsection*{4.2.~~~Time plan and implementation}
+\vspace{-1mm}
 
 \instructions{
 Describe summarily the time plan for the project during the grant period, 
@@ -576,14 +574,15 @@ and how the project will be implemented.
 Describe also any crucial risks or obstacles that may impact on the implementation, 
 and your plan for managing these.}
 
-\spara{Time planning.}
+\para{Time planning.}
 The project will employ three doctoral students (PhD1, PhD2, PhD3) for five years each 
 (working 80\% in research and 20\% as teaching assistants, as it is typical in KTH), 
 and three postdoctoral researchers (PostD1, PostD2, PostD3) for two years each. 
-The doctoral students will be recruited on years 1, 2, and 3 of the project, 
-and the postdocs will be recruited on years 2, 3, and 4. 
-One doctoral student and one postdoctoral researcher will work on each one of the research themes,
-so the timeline of the project with respect to research themes and personnel is as follows:
+%
+% The doctoral students will be recruited on years 1, 2, and 3 of the project, 
+% and the postdocs will be recruited on years 2, 3, and 4. 
+% One doctoral student and one postdoctoral researcher will work on each one of the research themes,
+The timeline of the project with respect to research themes and personnel is as follows:
 \vspace{-2mm}
 \begin{description}
 \setlength{\itemsep}{-4pt}
@@ -595,35 +594,40 @@ PhD2 starting on year 2, PostD2 starting on year 3;
 PhD3 starting on year 3, PostD3 starting on year 4;
 \end{description}
 \vspace{-2mm}
-The rationale is for \exploration to start first to study 
-fundamental concepts of diversity and fairness that can be employed in the other two themes.
+The rationale for \exploration starting first is to study 
+fundamental concepts that can be used in the other two themes.
 \markets will start last, as it has the highest level of ambition, novelty, and risk.
 For each theme, the postdoc will start at the second year of the doctoral student, 
-to be present in the most formative time of the student while skipping the first year when 
-the students are still get adjusted and take courses.
+to be present and contribute in the most formative time of the student. 
+%  while skipping the first year when  the students are still get adjusted and take courses.
 
 \spara{Research output.}
-We will aim publishing our work at top-tier international venues
-in the areas of Knowledge Discovery, Machine Learning, and Artificial Intelligence.
-We will focus on the quality of publications rather than quantity.
-Target journals for disseminating our work are IEEE TKDE, ACM TKDD, DMKD, etc. 
+We will aim publishing our work at top-tier international venues, 
+focus on quality rather than quantity.
+% 
+% in the areas of Knowledge Discovery, Machine Learning, and Artificial Intelligence.
+% We will focus on the quality of publications rather than quantity.
+Target journals 
+% for disseminating our work 
+are IEEE TKDE, ACM TKDD, DMKD, etc. 
 Target conferences are NeurIPS, ICML, VLDB, SIGMOD, SIGKDD, WebConf, WSDM, etc.
 
 \spara{Materials.}
-Our publications will be available via open access, 
-in particular they will be shared via the {\small\url{arxiv.org}} repository. 
-Similarly, the software we will develop and the other outputs of the project 
+Our publications will be available via open access in {\small\url{arxiv.org}}. 
+The software and the other outputs of the project 
 will become freely available to the scientific community via {\small\url{github.com}}.
 
 \spara{Risks and mitigation.}
 Devising efficient algorithms with provable quality guarantees is a challenging task
 and the largest risk of the project. 
-Achieving this objective, however, offers the largest potential for scientific impact in the computer science community. 
-In cases that we will not be able to prove theoretical results, 
+Achieving this objective, however, offers the largest potential for scientific impact.
+%  in the computer science community. 
+If we are not able to prove theoretical results, 
 we will study problems with simplifying assumptions, and 
-we will focus on devising heuristic methods and providing thorough empirical validation.
+will focus on devising heuristic methods and providing thorough empirical validation.
 
 \subsubsection*{4.3.~~~Project organization}
+\vspace{-1mm}
 
 \instructions{
 Clarify the contributions of yourself and any other researchers and/or key persons (including any doctoral students) 
@@ -636,25 +640,27 @@ including the relationship with your other research undertakings.}
 The PI will devote 50\% of his time in the project. 
 He will supervise the doctoral students and postdocs, 
 be responsible for scientific lead, 
-and will allocate time to work on mathematical and algorithmic problems arising in the project.
-He will also be responsible for ensuring flow of information and collaborations
-with other groups in KTH and with his international collaboration network, 
-offering the possibility to the doctoral students to make research visits and internships.
+and will allocate time to work on mathematical and algorithmic problems.
+He will be responsible for ensuring flow of information and collaborations
+with other groups in KTH and his international collaboration network, 
+offering the possibility to the group to make research visits and internships.
 The PI is currently managing an ERC Advanced Grant (2020 to 2025),
 which also employs 3 doctoral students and 3 postdocs, 
 so this will be a smooth transition to a similar-sized project.
 
-The doctoral students and postdocs will work in pairs on the corresponding research theme.
+% The doctoral students and postdocs will work in pairs on the corresponding research theme.
 We will encourage an environment of openness and collaboration, 
 while ensuring that each team member leads their own project.
-
+%
 During the hiring process we will support diversity and consider actions to achieve gender balance. 
 Currently the PI supervises 6 doctoral students and the gender ratio is 3:3.
 
+\vspace{-1mm}
 \subsection*{5.~~~Need for research infrastructure}
+\vspace{-1mm}
 
 \instructions{
-Specify the project’s need for international and national research infrastructure. 
+Specify the project's need for international and national research infrastructure. 
 If you choose to use other infrastructures than those supported by the Swedish Research Council, 
 and that are thereby open to all, 
 you must justify this (also applies to local research infrastructure).}
@@ -665,7 +671,9 @@ For implementing and evaluating our methods we will use the available
 KTH computing facilities
 and the National Academic Infrastructure for Supercomputing in Sweden (NAISS).
 
+\vspace{-1mm}
 \subsection*{6.~~~International and national collaboration}
+\vspace{-1mm}
 
 \instructions{
 Describe your collaboration with foreign and Swedish researchers and research teams. 
@@ -673,16 +681,17 @@ State whether you contribute to or refer to international collaboration in your 
 
 The PI has an extensive international collaboration network. 
 Recent and on-going collaborations include
-ptof.\ Tilj De Bie in Ghent University, 
-ptof.\ Evimaria Terzi in Bostong University,
-ptof.\ Heikki Mannila in Aalto University, and 
-Dr.\ Francesco Bonchi in Centai Labs.
+prof.\ De Bie in Ghent University, 
+prof.\ Terzi in Bostong University,
+prof.\ Mannila in Aalto University, and 
+Dr.\ Bonchi in Centai Labs.
 In spring 2024 the PI will spent one month as a visiting professor 
-in Sapienza University of Rome, hosted by prof.\ Stefano Leonardi.
+in Sapienza University of Rome, hosted by prof.\ Leonardi.
 In the near future the PI will apply for a sabbatical in Stanford University, 
-planning to visit prof.\ Johan Ugander. 
+planning to visit prof.\ Ugander. 
 We will encourage the research team to be actively involved in this collaboration network
 and make research visits and internships abroad.
+
 
 {\footnotesize
 \setlength{\bibsep}{0pt}
@@ -690,8 +699,8 @@ and make research visits and internships abroad.
 \bibliography{references}
 }
 
-\newpage
-\input{rebound}
+% \newpage
+% \input{rebound}
 
 \end{document}
 
