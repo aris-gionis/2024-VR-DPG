@@ -1,0 +1,13 @@
+The research does not involve experiments on animals, nor studies involving humans.
+
+The research involves handling of personal data, which will be used for the empirical evaluation of our methods, focusing on scalability and performance with respect to quality measures.
+
+For evaluating our methods on real-world data, we will mainly use benchmark datasets that have been curated by other research teams and have become publicly available to the research community. Such datasets are always anonymized and contain very minimal information for the problem at hand so that it is not possible to identify any individual.
+
+Depending on the direction of our research, we may decide to curate our own datasets. If this is the case, we will follow GDPR principles and best practices. 
+In particular: 
+* We will curate data that are already publicly available on the internet, e.g., reddit.
+* We will be guided by the minimization principle, i.e., collect the minimal amount of data required for the research question of interest.
+* We will make sure that the data are properly anonymized and securely stored.
+* We will never publish data snippets, but only aggregate statistics on the performance of our methods.
+* We will create an information notice at the project's website, to give information about the objectives and lawful basis of the research.

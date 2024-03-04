@@ -1,0 +1,5 @@
+I currently have no ongoing grant from the Swedish Research Council.
+
+I intend to apply for a project grant in the call closing on April 9, 2024. I understand that one can apply for these two grants simultaneously (distringuished professor grant and project grant), and choose one if both of them are funded.
+
+The current proposal is related to my ongoing ERC Advanced Grant, titled "An algorithmic framework for reducing bias and polarization in online media (REBOUND)," which is funded from 2020 to 2026. The current proposal extends the ERC project significantly, in the following ways: (i) considering notions of diversity and fairness, while the ERC grant is focusing on polarization; (ii) aiming to study different types of information-access systems beyond social networks; (iii) incorporating user-behavior models and a variety of information-seeking actions; and (iv) planning to explore different types of computational approaches, such as, reinforcement learning and algorithms with predictions.

@@ -1,0 +1,408 @@
+\documentclass[a4paper,11pt]{res}
+
+\topmargin -0.6in
+\oddsidemargin -.3in
+\evensidemargin -.3in
+\newsectionwidth{0in}    
+\setlength{\headheight}{13pt}
+
+\usepackage[charter]{mathdesign}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage[rgb]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{matrix,positioning,fit,shapes,arrows,shadows,calc}
+\usepackage{pgfplots}
+% \usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{pgfgantt}
+\usepackage{booktabs}
+\usepackage{url}
+
+\pagestyle{fancy}
+\lhead[{Gionis}]{{Gionis}}
+\rhead[{REBOUND}]{{REBOUND}}
+\chead[{Part B1c}]{{Part B1c}}
+\setcounter{page}{12}
+
+\setlength{\headsep}{20pt}
+\setlength{\textheight}{750pt}
+\setlength{\footskip}{20pt}
+\setlength{\textwidth}{500pt}
+
+
+\renewcommand{\baselinestretch}{1} 
+\begin{document}
+\begin{resume}
+
+\vspace{-1.2cm}
+\begin{center}
+{\large\bf  Ten-years track record}
+\end{center}
+
+\section{{\small PUBLICATIONS SUMMARY} (career-wise)}
+\begin{itemize}
+\item[--] 2 book chapters, 44 journal articles, and 131 peer-reviewed conference publications
+\item[--] 20 KDD, 15 ICDM, 14 ECML/PKDD, 13 CIKM, 10 DMKD, 8 WWW, 10 WSDM, 5 PVLDB, 5 ICDE,\\ 
+6 TKDD, 4 SIGIR, 4 TKDE, 3 SIGMOD, 1 ICML, 1 NIPS
+\item[--] 151 coauthors
+\end{itemize}
+
+% \noindent
+
+\smallskip
+{{\small\bf SCIENTIFIC IMPACT}}\footnote{Data from Google scholar in August 2018} \\
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\begin{tabular}{llrr}
+&  & All & Since 2013 \\
+& Number of citations: & 14\,851 & 8\,820 \\
+& $h$-index: & 52 & 43 \\
+& $i$10-index: & 111 & 95 \\
+\end{tabular} 
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{citations}
+\end{center}
+\end{minipage}
+
+% \section
+\medskip
+{{\bf\small TEN SELECTED PUBLICATIONS IN THE LAST EIGHT YEARS}}\footnote{\noindent Author ordering schemes:
+
+\begin{tabular}{rcl}
+& {[A]} & Alphabetically \\
+% & {[C]} & Contribution-based \\
+& {[S]} & Student first, and the rest of the authors alphabetically
+\end{tabular}
+}
+
+% \smallskip
+% \noindent
+% {{\bf Publications as contributor among peers}}
+
+\begin{itemize}
+
+\smallskip
+\item[--]
+{K. Garimella, G. De Francisci Morales, A. Gionis, and M. Mathioudakis}, \\
+{\em ``Quantifying controversy on social media''},\\
+ACM Transactions on Social Computing (TSC) 2018 \\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 92, [S])
+
+\item[--] 
+{K.\ Garimella, G.\ De Francisci Morales, A.\ Gionis, and M.\ Mathioudakis},\\
+{\em ``Reducing controversy by connecting opposing views''}, 
+WSDM 2017 \\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 39, [S])
+
+\item[--] 
+{K. Garimella, A. Gionis, N. Parotsidis, and N. Tatti}, \\
+{\em ``Balancing information exposure in social networks''}, 
+NIPS 2017 \\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 5, [A])
+
+\iffalse
+\item[--]
+{E.\ Galbrun, A.\ Gionis, N.\ Tatti}, 
+{\em ``Top-$k$ overlapping densest subgraphs''}, 
+DMKD 2016
+\\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 6, [A])
+\fi
+
+\item[--]
+{G.\ De Francisci Morales, A.\ Gionis}, 
+{\em ``Streaming similarity self-join''}, 
+PVLDB 2016
+\\
+(Role: Scientific lead and postdoc supervision, {Citations:} 14, [A])
+
+\item [--]
+{E. Galbrun, A. Gionis, N. Tatti}, 
+{\em ``Overlapping community detection in labeled graphs''}, 
+DMKD 2014
+\\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 32, [A])
+
+\item [--]
+{P. Rozenshtein, A. Anagnostopoulos, A. Gionis, N. Tatti}, \\
+{\em ``Event detection in activity networks''},  KDD 2014
+\\
+(Role: Scientific lead and student/postdoc supervision, {Citations:} 59, [S])
+
+\item[--] 
+{C. Tsourakakis, F. Bonchi, A. Gionis, F. Gullo, M. Tsiarli}, \\
+{\em ``Denser than the densest subgraph: Extracting optimal quasi-cliques with quality guarantees''}, 
+KDD 2013 \\
+(Role: Scientific lead and student supervision, {Citations:} 135, [S])
+
+\iffalse
+\item[--] %%\item[--] 
+{A. Gionis, E. Terzi, P. Tsaparas}, 
+{\em ``Opinion maximization in social networks''},
+SDM 2013 \\
+(Role: Equal contribution among peers, {Citations:} 61, [A])
+\fi
+
+\item[--] %%\item[--] 
+{A. Anagnostopoulos, L. Becchetti, C. Castillo, A. Gionis, S. Leonardi},\\
+{\em ``Online team formation in social networks''}, WWW 2012 \\
+(Role: Equal contribution among peers, {Citations:} 201, [A])
+
+\item [--]
+{ G. De Francisci Morales, A. Gionis, M. Sozio}, 
+{\em ``Social content matching in MapReduce''},
+PVLDB 2011
+\\
+(Role: Scientific lead and student supervision, {Citations:} 53, [S])		
+
+\item [--]
+{ M. Mathioudakis, C. Castillo, F. Bonchi, A. Gionis, A. Ukkonen}, \\
+{\em ``Sparsification of influence networks''},
+KDD 2011 \\
+(Role: Scientific lead and student supervision, {Citations:} 140, [S])		
+
+\iffalse
+\item [--]
+{ M. Sozio, A. Gionis},
+{\em ``The community-search problem and how to plan a successful cocktail party''},
+%% 16th International Conference on Knowledge Discovery and Data Mining (KDD) 2010.
+KDD 2010 \\
+(Role: Equal contribution among peers, {Citations:} 325, [C])
+
+\item [--]
+{ L. Becchetti, P. Boldi, C. Castillo, A. Gionis},
+{\em ``Efficient algorithms for large-scale local triangle } \\ {\em counting''},
+%% ACM Transactions on Knowledge Discovery from Data (TKDD), Volume 4, Issue 3, 2010
+ACM TKDD 2010
+\\
+(Role: Equal contribution among peers, {Citations:} 266, [A])		
+
+\item [--]
+{ M. Potamias, F. Bonchi, C. Castillo, A. Gionis},
+{\em ``Fast shortest path distance estimation in large networks''},
+%% 18th Conference on Information and Knowledge Management (CIKM) 2009
+CIKM 2009
+\\
+(Role: Scientific lead and student supervision, {Citations:} 234, [S])
+
+\item[--]
+{E. Agichtein, C. Castillo, D. Donato, A. Gionis, G. Mishne, }
+{\em ``Finding high-quality content in social media''},
+WSDM 2008 
+\\
+(Role: Equal contribution among peers,  {Citations:} 1319, {[A]})
+\fi
+
+\vspace{6mm}
+\end{itemize}
+
+
+\section{{\small INVITED PRESENTATIONS AND KEYNOTE TALKS}}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item [--]
+ECML PKDD Conference, Dublin, Ireland, 2018
+\item [--]
+Complex Networks conference, Cambridge, UK, 2018
+\item [--]
+WWW workshop on 
+online social networks and media:
+network properties and dynamics, Lyon, 2018
+\item [--]
+NIPS workshop on prioritising online content, Long Beach, CA, USA, 2017
+\item [--]
+University of Rome ``Tor Vergata'',  Rome, 2016
+\item [--]
+Ludwig Maximilians University of Munich, Germany, 2016 
+\item[--]
+%% {\em ``Algorithms for discovering densely connected communities and overlapping clusters''},
+Annual Symposium on String Processing and Information Retrieval (SPIRE), London, 2015	
+%% \item
+%% {\em ``Information dissemination in social networks''},
+%% Yahoo!\ ``big thinkers'' series, Bangalore, India, Apr 2012
+% \item[--]
+%% {\em ``Algorithms for discovering densely connected communities and overlapping clusters''},
+% Institut de Recherche en Informatique de Toulouse, France, %% Nov 
+% 2011	
+\item [--]
+%% {\em ``Efficient algorithms for large-scale social dissemination''},
+Workshop on Large-Scale Distributed Systems for Information Retrieval (LSDS-IR), Glasgow, %% Oct 
+2011 
+\item [--]
+%% {\em ``Efficient tools for mining large graphs’''},
+Benelearn Conference, Hague, the Netherlands, %% May 
+2011
+\item [--]
+%% {\em ``The community-search problem and how to plan a successful cocktail party''},
+Technical University of Eindhoven, the Netherlands, %% Dec
+2010
+\item [--]
+%% {\em ``Efficient tools for mining large graphs:\ Indexing, sampling, counting, and predicting''},
+Workshop on Mining and Learning with Graphs (MLG), Washington DC, %% Aug 
+2010
+\iffalse
+\item [--]	
+%% {\em ``Distributed web retrieval''},
+Workshop on Distributed Agent-based
+Retrieval Tools (DART), %% Cagliari, 
+Italy, {2008}
+\item[--]
+%% {\em ``Approximation algorithms for $k$-anonymity and privacy preservation in query logs''},
+Workshop on Mining Massive Data Sets for Security
+(MMDSS), Italy, {2007}
+\fi
+\end{itemize}
+
+
+\section{{\small TUTORIALS IN CONFERENCES AND PhD SCHOOLS}}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item [--]
+{\em ``Polarization on social media''}, 
+ICWSM 2017, WWW 2018, and KDD 2018
+% \item [--]
+% {\em ``Algorithmic graph mining''}, 
+% Estonian Summer School on Computer and System Science 2016
+\item [--]
+{\em ``Algorithmic methods for mining large graphs''}, 
+Bertinoro International Spring School (BISS) 2016,
+Estonian Summer School on Computer and System Science 2016, 
+KDD 2013, PKDD 2013, and Summer School on Massive Data Mining (MaDaMS) 2012
+\item [--]
+{\em ``Dense-subgraph discovery''}, KDD 2015 and ECML PKDD 2015
+% \item [--]
+% {\em ``Modeling and mining large graphs''}, 
+% Summer School on Operational Research and Applications, 2015
+% \item [--]
+% {\em ``Dense-subgraph discovery''}, CSWR 2015 and Network Analysis Summer School 2014 
+% \item [--]
+% {\em ``Algorithmic techniques for modeling and mining large graphs''}, KDD and PKDD 2013
+\item [--]
+{\em ``Information dissemination in social networks''}, SPIRE 2012
+% \item [--]
+% {\em ``Algorithms for mining large graphs''},
+% Summer School on Massive Data Mining, 
+%%(MaDaMS), 
+% 2012
+% \item [--]
+% {\em ``Web mining and next-generation search''}, 
+% Summer School in Information Retrieval (ESSIR)
+% 2009
+%% \item 	
+%% {\em ``Introduction to web mining and graph mining''}, Invited course in the University of Pisa, 2009
+\item [--]
+{\em ``An introduction to web mining''}, ECML PKDD 2008,  WWW 2008, ESSIR 2009, IJCAI 2011
+\iffalse
+\item[--]
+{\em ``Mining the graph structures of the web''},
+summer school on Algorithmic Data Analysis (SADA) 
+{2007}
+\item[--]
+{\em ``Segmentation of sequences''},
+SIAM Conference in Data Mining, 2005 
+\fi
+\end{itemize}
+
+\section{{\small GRANTED PATENTS}}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item [--]	
+Network graph evolution rule generation, US Patent 9489448	
+\item [--]	
+Query log mining for detecting spam hosts, US Patent 8996622
+\item [--]
+Social networking feed delivery system and method, US 8671141
+\item [--]
+System and method of matching content items and consumers, US 8660975 
+\item [--]
+Taxonomy-driven lumping for sequence mining, US 8346686
+% \item [--]
+% Network graph evolution rule generation, US 8204904
+\item [--]
+System and methodology for a multi-site search engine, US 8095545
+\item [--]
+Method and system for generating a hyperlink-click graph, US 7945565
+\item [--]
+System and method for caching posting lists, US 7890488
+\item [--]
+Automatically ranking answers to database queries, US 7251648
+\item [--]
+Document descriptor extraction method, US 7080314
+\end{itemize}
+
+\iffalse
+\section{{\small RESEARCH EXPERIENCE}}
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item[]
+My research focuses on data mining and algorithmic data analysis.
+I am particular interested in algorithms for graphs, social-network analysis, and algorithms for web-scale data. 
+I have worked on a wide variety of problems, 
+and this diversity is reflected on my publication record. 
+
+My background puts me in a unique position 
+to complete the proposed project successfully. 
+I have carried the\-ore\-ti\-cal work on algorithms design,
+and I have experience on practical data-mining methods, 
+supported by a six-year experience in industrial research. 
+
+I have published highly-cited work 
+on a number of different areas that compose the project theme:
+time-varying network analysis, 
+scalable algorithms for graph mining, 
+streaming and sketching techniques, 
+summarization and clustering methods, 
+network-inference algorithms, 
+social-media and web-mining applications, etc.
+
+\end{itemize}
+\fi
+
+
+\section{{\small SUPERVISING EXPERIENCE}}
+\begin{itemize}
+% \setlength{\itemsep}{1pt}
+\item[--]
+Since joining Aalto in 2013,
+I have been leading the Data Mining group, 
+currently consisting of 5 doctoral students and 2 postdoctoral researchers. \\
+Members of the group have been actively publishing in top-level journals and conferences.\\
+Graduates of the group have been employed in Google, Microsoft, Bell Labs, 
+EPFL (postdoc), MIT (postdoc), and University of Helsinki (assistant professor).\\
+All doctoral students have been conducting internship in places
+such as Facebook, Google, Amazon, LinkedIn, Nokia, and MPI.
+
+\item[--]
+While in Yahoo!\ Research, 
+I supervised more than 10 PhD interns. 
+The typical internship duration was 3 months, 
+and almost all internships led to at least one publication at a top-tier venue.
+%% With many students I continued working from distance after they finished their internship.
+\end{itemize}
+
+
+\section{{\small INDUSTRIAL EXPERIENCE}}
+\begin{itemize}
+% \setlength{\itemsep}{1pt}
+\item[]
+During my appointment in Yahoo!\ Research, I have been the manager of the Web Mining group. 
+My position involved scientific lead, 
+tech transfer, 
+managing the group activities, 
+and administrative duties.
+\end{itemize}
+
+
+
+\end{resume}
+\end{document}
+
+
+
