@@ -107,7 +107,7 @@ including our recent and ongoing work,
 and push the state-of-the-art 
 by intro\-duc\-ing novel abstractions, 
 developing rigorous computational methods, and 
-performing evaluations on real-world applications.
+performing evaluations on real-world datasets.
 In particular, {\acronym} has the following research objectives. 
 %
 \begin{description}
@@ -115,15 +115,15 @@ In particular, {\acronym} has the following research objectives.
 \item[{Models and problems:}]
 Develop novel models and novel problem formulations that enable 
 obtaining a deeper understanding on phenomena related 
-to lack of diversity and fairness in  modern information-access systems.
+to the lack of diversity and fairness in  modern informa\-tion-access systems.
 Focus on three specific domains: 
 \emph{information-exploration systems}, \emph{information networks}, and 
 \emph{two-sided information markets}.
 
 \item[{Algorithms:}]
-Develop computational methods for the formulated problems.
+Develop computational methods for the models and problems that will be formulated.
 Our methods will be designed for different computational settings, 
-e.g., combinatorial formulations, stochastic and uncertain data, 
+e.g., combinatorial formulations, coping with stochastic and uncertain data, 
 reinforcement learning, algorithms with predictions, and more.
 The proposed algorithms should be efficient %, 
 % should be able to deal with uncertainty, 
@@ -139,10 +139,12 @@ Implement the developed algorithms and make them available to the scientific com
 
 \item[{Research environment in KTH:}]
 Strengthen the area of algorithmic data analysis 
-at the department of computer science in KTH. 
+at the department of computer science in KTH
+and build an internationally prominent environment. 
 Nurture doctoral students and postdoctoral researchers in the topic of the project,
 and create synergies with other faculty working on 
 the foundations of data science, machine learning, and artificial intelligence.
+Strengthen and expand our international collaboration network.
 \end{description}
 
 \spara{Diversity vs.\ fairness.}
@@ -167,7 +169,7 @@ beyond individuals and demographic groups.
 For instance, we can talk about fairness in the context of a news recommender system, 
 asking to ensure that a set of news articles represent fairly the political spectrum.
 In this way, similar to diversity, we can study fairness in the context of information-access systems.
-Furthermore, note that diversity and fairness are not substitute for one another, 
+Furthermore, diversity and fairness are not substitute for one another, 
 but they are complementary concepts.
 
 \subsection*{2.~~~State of the art}
@@ -176,7 +178,7 @@ but they are complementary concepts.
 Maximizing diversity and promoting fairness have been studied 
 extensively in different contexts in computer science, 
 especially in recent times with the raising importance of \emph{responsible AI}~\cite{dignum2019responsible}.
-Due to space limitations we only discuss some representative approaches, 
+Due to space limitations we only discuss here some representative works
 and their connection with this proposal.
 
 % \spara{diversity as an optimization problem}
@@ -184,7 +186,7 @@ and their connection with this proposal.
 From the theoretical viewpoint, the literature mainly focuses on two notions of diversity: 
 \emph{coverage-based diversity}, relying on \emph{submodular} coverage functions~\cite{bach2013learning} 
 and \emph{pairwise dissimilarity-based} diversity, like \emph{dispersion}~\cite{hassin1997approximation}.
-Diversity has also been studied in an \emph{axiomatic} framework~\cite{gollapudi2009axiomatic}. 
+Diversity has also been studied in \emph{axiomatic} frameworks~\cite{gollapudi2009axiomatic}. 
 An appealing formulation is the \emph{max-sum diversity} problem~\cite{borodin2012max},
 which captures trade-offs between diversity and relevance.
 Solutions for max-sum diversity involve \emph{combinatorial methods}~\cite{borodin2012max} or
@@ -196,11 +198,11 @@ to study extensions and improved methods.
 
 % \spara{diversity in recommender systems}
 
-Diversity has also been studied in \emph{recommender systems},
+Diversity has also been studied in\emph{information retrieval} and \emph{recommender systems},
 where it has been shown to improve user experience~\cite{Castells2022}.
 % and thus, it has received considerable attention recently. 
 % ~\cite{on_unexpectedness, improving_aggregate, evaluating_novel_recs, diversity_top_n_recs, rank_relevance}.
-One classic method in \emph{information retrieval}
+One classic method in {information retrieval}
 % seeking to strike a balance between diversity and relevance, 
 is the \emph{maximal marginal relevance} (MMR)~\cite{MMR}, 
 while many other strategies seek to 
@@ -215,7 +217,7 @@ and studying novel notions for \emph{fair representation} of recommended items.
 
 Diversity and fairness in graph settings is significantly less-studied area,
 compared to item-selection and recommender-systems problems.
-Still several ideas have been investigated, 
+Nonetheless, several ideas have been investigated, 
 such as \emph{adding} or \emph{rewiring graph edges} for
 \emph{reducing polarization}~\cite{adriaens2023minimizing,cinus2023rebalancing,haddadan2022reducing},
 \emph{mitigating exposure to harmful content}~\cite{coupette2023reducing,fabbri2022rewiring}, 
@@ -223,15 +225,15 @@ or \emph{improving fairness for the Page\-Rank algorithm}~\cite{tsioutsiouliklis
 Extending this line of work and introducing new models and methods for graph settings
 is a central goal of \acronym.
 In addition, while there is a growing amount of literature for 
-recommendations in two-sided information markets,
+recommendations in \emph{two-sided information markets},
 addressing also fairness issues~\cite{do2021two,wang2021user}, 
 the area is still not well explored and there is lack of a unified theory
 and established methods.
 
 % \spara{fairness in ML}
 
-The topic of bias and fairness in machine learning has received a lot of interest in the recent years, 
-having spawn a large community and dedicated dissemination venues, such as the FAccT Conference. 
+The topic of \emph{bias and fairness in machine learning} has received a lot of interest in the recent years, 
+having spawn a large community and dedicated dissemination venues, such as the FAccT conference. 
 While many surveys and tutorials can be found online~\cite{caton2020fairness,mehrabi2021survey}, 
 we note that our project is more closely related to notions of
 \emph{bias and fairness in unsupervised machine learning}, 
@@ -243,9 +245,9 @@ and \emph{fair graph mining}~\cite{dong2023fairness}.
 The PI, together with his team and research collaborators, 
 have pioneered work on many of the above topics,
 including
-different formulations for diversity in network analysis~\cite{adriaens2023minimizing,cinus2023rebalancing,coupette2023reducing,oettershagen2024finding}
-diversity in ranking problems~\cite{zhang2022ranking}, 
-as well as for diversity-aware clustering~\cite{thejaswi2021diversity}.
+different formulations for \emph{diversity in network analysis}~\cite{adriaens2023minimizing,cinus2023rebalancing,coupette2023reducing,oettershagen2024finding}
+\emph{diversity in ranking problems}~\cite{zhang2022ranking}, 
+as well as for \emph{diversity-aware clustering}~\cite{thejaswi2021diversity}.
 
 \subsection*{3.~~~Significance and scientific novelty}
 
