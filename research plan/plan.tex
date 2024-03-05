@@ -265,7 +265,7 @@ Also say the main novelty would be to study diversity and fairness in new settin
 \para{Significance.}
 Our project lies in the intersection of different subjects in computer-science:
 information retrieval, recommender systems, knowledge discovery, and algorithms design. 
-While many of the themes have been studied in different contexts,
+While many of the themes have been studied previously in different contexts,
 % Diversity in information access ensures that visible content 
 % encompasses a wide range of perspectives, cultures, and voices.
 % Additionally, fairness ensures that provided information is equitable and unbiased.
@@ -282,7 +282,7 @@ We will seek to establish a unified framework and common methodologies for
 studying diversity and fairness in the different settings. 
 As it is common in fairness ML literature, we will rely on social-justice theories, 
 such as distributive justice and equitable treatment of individuals, 
-as well as in social welfare objectives. 
+as well as in social-welfare objectives. 
 In terms of methods, emphasis will be given to combinatorial algorithms, 
 building on the previous work of the PI. 
 In particular, we will consider techniques 
@@ -316,10 +316,10 @@ diversity and fairness in information markets.
 \vspace{-1mm}
 Each theme is characterized by a distinct type of an information-access system, 
 having its own unique characteristics, 
-so, different abstractions and methods will be used. 
+so, different abstractions and methods will be applied. 
 Connections among the themes~do~exist, 
 % for instance, common definitions for diversity and fairness, 
-and thus, we will seek to identify useful~synergies. 
+and thus, we will seek to identify meaningful~synergies. 
 
 \iffalse
 With respect to methods, 
@@ -361,29 +361,32 @@ We consider an information system
 that stores a large collection of content items.
 Users interact with the system and can access the items through various means, 
 such as keyword searches, recommendations, or combinations of those.
-We assume that users have different interests
+We assume that users have different interests,
 and the system has prior information about user interests and user behavior.
-This is a general setting that can model different scenarios, 
+Our setting will be general and it will model different scenarios, 
 e.g., web-search engines, e-commerce systems, 
 or platforms for browsing and reading news articles.
+
 Our objective is to design methods that enable users to 
 interact with the system and 
 \emph{explore the available information}.
-We are interested in systems that enable users to discover items that are relevant to their interests, 
-while satisfying criteria of diverse and fair representation.
+We are interested in designing methods that \emph{enable users to discover new content items}, 
+which are relevant to their interests, 
+while satisfying criteria of diverse and fair information representation.
 
 Most existing methods 
 % in information retrieval and recommender systems
 consider simplistic models for this problem;
-for instance, \emph{find a set of $k$ items} 
-that optimize some function that combines relevance with diversity. 
+for instance, many works ask to
+\emph{find a set of $k$ items} 
+that optimize some function that combines relevance and diversity. 
 In the real world, however, information-exploration tasks are significantly more complex. 
 First, items are presented to users in an order, and not as a set.
 Second, users may click on some of the presented item, 
 initiating a new ``round'' of exploration. 
 Third, users may terminate their interaction with the system at any point,
-based on the relevance and novelty of the presented items,
-and the duration of their exploration session so far.
+based on the relevance and novelty of the information they have received
+and on the duration of their exploration session so far.
 
 Motivated by these observations, 
 we will introduce novel frameworks for information-exploration tasks
@@ -393,7 +396,7 @@ thus, combining relevance and diversity in a more intuitive way.
 In our preliminary work, we have studied a simple version 
 of this problem where we ask to \emph{maximize the expected diversity} of discovered content
 in the presence of the probability that a user 
-may terminate exploration if they do not discover interesting content.
+may terminate exploration if they do not receive interesting content.
 Such a probability can be estimated from user--item relevance scores.
 The problem has interesting connections to the \emph{ordered Hamiltonian-path problem}, 
 and under mild assumptions we are able to design approximation algorithms
@@ -412,7 +415,7 @@ in order to ensure \emph{coverage} of different sources with respect to their \e
 as well as with respect to their \emph{stance} towards important entities in the stories. 
 % To infer entities and stances towards them we will use standard NLP toolboxes and large language models.
 Additionally, we want to select stories that are well-align with user interests. 
-This is relevant to the topic of \emph{calibrated recommendations}~\cite{wang2022improving}.
+This setting relates to the topic of \emph{calibrated recommendations}~\cite{wang2022improving}.
 In \acronym, we will develop methods for recommendations that 
 offer \emph{calibrated} as well as \emph{fairly-represented} content.
 Furthermore, we will study problems that model the sequential-nature of recommendations~\cite{zhang2022ranking}.
@@ -435,7 +438,7 @@ where networks may represent
 social networks, 
 hyperlink graphs, or 
 ``recommendation networks'' consisting of what-to-consume-next recommendations.
-We view networks as systems where information spreads and content is consumed. 
+We view networks as systems where information spreads and content is consumed by individuals. 
 Information spread and content consumption
 is typically modeled via a dynamic process, such as random walks, 
 shortest paths, local search, etc.
@@ -443,7 +446,7 @@ shortest paths, local search, etc.
 We additionally assume that network nodes are labeled according to certain attributes, 
 e.g., demographic groups in a social network, or 
 web page categories in a hyperlink graph. 
-The confluence of network structure with node attributes typically gives rise to 
+The interaction of network structure with node attributes typically gives rise to 
 \emph{network structural bias}.
 For example, contacts in a social network are more likely to have similar views on a topic, 
 and thus, when navigating a network one may encounter biased information about the topic.
@@ -476,7 +479,7 @@ We aim to extend this problem in settings with node attributes.
 The goal is to identify a small number of network interventions
 to optimize information access among different groups in the network.
 
-Additionally, existing methods mainly consider \emph{global interventions}, 
+In another direction, existing methods mainly consider \emph{global interventions}, 
 i.e., they seek to optimize a global network objective. 
 It will be particularly interesting to study settings for \emph{local interventions}, 
 where we aim to provide \emph{recourse actions} for a particular node in the network, 
@@ -484,7 +487,7 @@ in order to optimize diversity and fairness measures for that node.
 One challenge here is to ensure that such actions do not degrade 
 the corresponding measures for other nodes in the~network. 
 
-Finally, in all of the previous cases it is assumed that interventions are certain, 
+Finally, in all of the previous cases it is assumed that interventions are \emph{deterministic}, 
 e.g., edges can be added with probability~1.
 In many cases, interventions correspond to link recommendations, 
 which are adopted with a certain probability
@@ -596,7 +599,7 @@ The rationale for \exploration starting first is to study
 fundamental concepts that can be used in the other two themes.
 \markets will start last, as it has the highest level of ambition, novelty, and risk.
 For each theme, the postdoc will start at the second year of the doctoral student, 
-to be present and contribute in the most formative time of the student. 
+to be present and contribute to the most formative time of the student. 
 %  while skipping the first year when  the students are still get adjusted and take courses.
 
 \spara{Research output.}
@@ -607,8 +610,8 @@ focus on quality rather than quantity.
 % We will focus on the quality of publications rather than quantity.
 Target journals 
 % for disseminating our work 
-are IEEE TKDE, ACM TKDD, DMKD, etc. 
-Target conferences are NeurIPS, ICML, VLDB, SIGMOD, SIGKDD, WebConf, WSDM, etc.
+are IEEE TKDE, PVLDB, ACM TKDD,  DMKD, etc. 
+Target conferences are NeurIPS, ICML, SIGIR, SIGMOD, SIGKDD, WebConf, WSDM, etc.
 
 \spara{Materials.}
 Our publications will be available via open access in {\small\url{arxiv.org}}. 
@@ -653,7 +656,7 @@ while ensuring that each team member leads their own project.
 During the hiring process we will support diversity and consider actions to achieve gender balance. 
 Currently the PI supervises 6 doctoral students and the gender ratio is 3:3.
 
-\vspace{-1mm}
+\vspace{-2mm}
 \subsection*{5.~~~Need for research infrastructure}
 \vspace{-1mm}
 
@@ -669,7 +672,7 @@ For implementing and evaluating our methods we will use the available
 KTH computing facilities
 and the National Academic Infrastructure for Supercomputing in Sweden (NAISS).
 
-\vspace{-1mm}
+\vspace{-2mm}
 \subsection*{6.~~~International and national collaboration}
 \vspace{-1mm}
 
@@ -680,17 +683,18 @@ State whether you contribute to or refer to international collaboration in your 
 The PI has an extensive international collaboration network. 
 Recent and on-going collaborations include
 prof.\ De Bie in Ghent University, 
-prof.\ Terzi in Bostong University,
+prof.\ Terzi in Boston University,
 prof.\ Mannila in Aalto University, and 
 Dr.\ Bonchi in Centai Labs.
 In spring 2024 the PI will spent one month as a visiting professor 
 in Sapienza University of Rome, hosted by prof.\ Leonardi.
 In the near future the PI will apply for a sabbatical in Stanford University, 
 planning to visit prof.\ Ugander. 
-We will encourage the research team to be actively involved in this collaboration network
-and make research visits and internships abroad.
+We will seek to strengthen and further expand this collaboration network.
+We will encourage the research team to be actively involved in national and international collaborations
+and make research visits and internships in other institutes.
 
-
+\vspace{-3mm}
 {\footnotesize
 \setlength{\bibsep}{0pt}
 \bibliographystyle{abbrv}
